@@ -1,5 +1,5 @@
 import { ProjectCard } from '@/components/ProjectCard';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import * as motion from 'framer-motion/client';
 
 export default async function Home({
@@ -8,8 +8,8 @@ export default async function Home({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = useTranslations('Dashboard');
-  const tProjects = useTranslations('Projects');
+  const t = await getTranslations('Dashboard');
+  const tProjects = await getTranslations('Projects');
 
   // List of projects to display
   const projectKeys = [
