@@ -14,9 +14,9 @@ import { RoadmapVisualizer } from '@/components/RoadmapVisualizer';
 export default async function ProjectDetail({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: string; locale: string }>;
 }) {
-  const { id } = await params;
+  const { id, locale } = await params;
   // Only generic "Projects" namespace is loaded, we access specific project via key
   const t = await getTranslations('Projects');
 
@@ -186,7 +186,7 @@ export default async function ProjectDetail({
       {/* Navigation */}
       <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex items-center justify-between pointer-events-none">
         <Link
-          href="/"
+          href={`/${locale}`}
           className="pointer-events-auto flex items-center gap-2 text-sm text-red-200/60 hover:text-white transition-colors bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-red-900/30 hover:border-red-500/50"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -215,7 +215,7 @@ export default async function ProjectDetail({
             <div className="flex items-center gap-4">
               {/* Back Button (Mobile/Desktop friendly) */}
               <Link
-                href="/"
+                href={`/${locale}`}
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors backdrop-blur-sm"
               >
                 <ArrowLeft className="w-5 h-5" />

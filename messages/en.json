@@ -61,38 +61,80 @@
       },
       "stack": {
         "s1": {
+          "name": "Next.js",
+          "desc": "React Framework",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
           "name": "NestJS",
           "desc": "Scalable Backend",
           "cat": "Backend",
           "icon": "Server"
         },
-        "s2": {
-          "name": "GPT-4o",
-          "desc": "Testing Engine",
-          "cat": "AI",
-          "icon": "Bot"
-        },
         "s3": {
-          "name": "BullMQ",
-          "desc": "Job Queues",
-          "cat": "Backend",
-          "icon": "Layers"
+          "name": "GPT-4o",
+          "desc": "Conversational AI",
+          "cat": "AI",
+          "icon": "Cloud"
         },
-        "s4": "TypeScript",
-        "s5": "Redis",
-        "s6": "Next.js"
+        "s4": {
+          "name": "Redis",
+          "desc": "High-performance Cache",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "AWS",
+          "desc": "Cloud Infrastructure",
+          "cat": "DevOps",
+          "icon": "Cloud"
+        },
+        "s6": {
+          "name": "TypeScript",
+          "desc": "Type Safety",
+          "cat": "Backend",
+          "icon": "Code2"
+        }
       }
     },
     "monthler": {
       "title": "Monthler AI Travel",
       "description": "Autonomous travel planning agent for complex itineraries.",
+      "tags": [
+        "Travel Tech",
+        "Smart Recommendations",
+        "Local Tourism"
+      ],
+      "impact": "Transforms the chaos of travel planning into a seamless experience, handling complex logistics so travelers can simply enjoy the journey.",
+      "categories": [
+        "Travel Tech",
+        "AI Agent",
+        "Recommender",
+        "Local Tourism"
+      ],
       "longDescription": "Monthler redefines travel planning by using autonomous agents to scan thousands of data points—flights, hotels, weather, local events—to construct the perfect hyper-personalized itinerary in seconds.",
       "features": {
         "security": {
-          "title": "Safety Sentinel",
-          "desc": "Real-time monitoring of travel advisories, weather alerts, and local safety measures."
+          "title": "Digital Local Guide",
+          "desc": "RAG engine suggests authentic local experiences, avoiding tourist traps."
         },
         "cost": {
+          "title": "Auto-Scheduler",
+          "desc": "Automatically generates day-by-day itineraries with optimal routes and real-time budget estimation."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> USER: 'Plan a 2-day food tour in Danang under $100'",
+          "step2": ">> INTENT: Detected GOAL=Food, LOC=Danang, BUDGET=$100",
+          "step3": ">> SEARCH: Querying DB 'Local_Eateries'...",
+          "step4": ">> RANK: Scoring 'Mi Quang Ba Mua' (Score: 0.98)...",
+          "step5": ">> OUTPUT: Generating 5-stop itinerary map."
+        },
+        "scanner": {
+          "analyzing": "Optimizing route logic...",
+          "grade": "Travel Efficiency: 95%",
           "comment": "Logical flow established. Travel times minimized. Budget utilization: $85 (Safe)."
         }
       },

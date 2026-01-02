@@ -1,7 +1,10 @@
 'use client';
 
+// 1. Save language preference to localStorage (Requirement: "lưu vào localstorage")
+// 2. Persist across sessions
 import { usePathname, useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
+import { useEffect } from 'react';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
@@ -12,8 +15,26 @@ export default function LanguageSwitcher() {
     // Remove the current locale prefix from the pathname
     const pathWithoutLocale = pathname.replace(`/${locale}`, '');
     const newPath = `/${newLocale}${pathWithoutLocale || ''}`;
+
+    // Save preference
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('NEXT_LOCALE', newLocale);
+    }
+
     router.replace(newPath);
   };
+
+  // Sync on mount/change
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('NEXT_LOCALE');
+      // If current locale differs from saved (and saved exists), we *could* redirect,
+      // but middleware handles the truth. We just strictly save the current one here.
+      if (saved !== locale) {
+        localStorage.setItem('NEXT_LOCALE', locale);
+      }
+    }
+  }, [locale]);
 
   return (
     <div className="flex gap-2 text-xs font-medium text-zinc-500 bg-white/5 p-1 rounded-full border border-white/5 backdrop-blur-sm">
