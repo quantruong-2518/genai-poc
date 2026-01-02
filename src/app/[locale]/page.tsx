@@ -2,11 +2,12 @@ import { ProjectCard } from '@/components/ProjectCard';
 import { useTranslations } from 'next-intl';
 import * as motion from 'framer-motion/client';
 
-export default function Home({
-  params: { locale },
+export default async function Home({
+  params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const t = useTranslations('Dashboard');
   const tProjects = useTranslations('Projects');
 
