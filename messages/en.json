@@ -96,6 +96,26 @@
           "comment": "Logical flow established. Travel times minimized. Budget utilization: $85 (Safe)."
         }
       },
+      "roadmap": {
+        "title": "Evolution Roadmap",
+        "steps": {
+          "s1": {
+            "phase": "Phase 1: Connection",
+            "title": "Reviving Local Economies",
+            "desc": "Prioritize 'mom-and-pop' shops and hidden local gems in recommendation algorithms to redirect tourism revenue to local communities."
+          },
+          "s2": {
+            "phase": "Phase 2: Experience",
+            "title": "Sustainable Tourism Protocol",
+            "desc": "Integrate carbon footprint tracking and eco-friendly route optimization to minimize the environmental impact of travel."
+          },
+          "s3": {
+            "phase": "Phase 3: Global Village",
+            "title": "Cultural Bridge AI",
+            "desc": "Deploy real-time cultural translation agents that explain local customs and history, fostering deep cross-cultural empathy."
+          }
+        }
+      },
       "screenshots": {
         "s1": "Conversational Intake: Complex context understanding (budget, vibe, weather).",
         "s2": "Logic Refinement: Handling edge cases and user constraints iteratively.",
@@ -175,6 +195,26 @@
           "comment": "Audio transcribed. Summary generated. Image rendered. Workflow complete."
         }
       },
+      "roadmap": {
+        "title": "Future Vision",
+        "steps": {
+          "s1": {
+            "phase": "Phase 1: Access",
+            "title": "AI Literacy for All",
+            "desc": "Open-source the core generation modules to lower the barrier of entry for non-technical creators in developing nations."
+          },
+          "s2": {
+            "phase": "Phase 2: creation",
+            "title": "Ethical AI Watermarking",
+            "desc": "Implement immutable C2PA content credentials to fight misinformation and protect artist attribution in the generative age."
+          },
+          "s3": {
+            "phase": "Phase 3: Symbiosis",
+            "title": "Human-AI Co-Creativity",
+            "desc": "Shift focus from 'AI replacing experts' to 'AI amplifying human expression', enabling a new renaissance of digital art."
+          }
+        }
+      },
       "screenshots": {
         "s1": "Unified Studio: Text, Image, and Audio tools in one view",
         "s2": "Image Generator: DALL-E 3 prompting interface",
@@ -236,7 +276,7 @@
         "Gamification",
         "Mobile First"
       ],
-      "longDescription": "WhatEat is not just a calorie counter; it's a proactive AI Nutritionist. By leveraging computer vision (Gemini/GPT-4V), it instantly analyzes food photos to breakdown macros. The platform keeps users engaged through a robust gamification system with quests, streaks, and a lively social feed.",
+      "longDescription": "WhatEat transforms nutrition tracking from a chore into a lifestyle. Acting as a proactive AI Nutritionist, it uses advanced computer vision to decode complex meals into actionable data instantly. The platform drives engagement not through guilt, but through gamified progress, social quests, and positive reinforcement.",
       "features": {
         "ai_nutrition": {
           "title": "AI Food Scanner",
@@ -259,6 +299,26 @@
           "analyzing": "Scanning nutrients...",
           "grade": "Health Score: 8.5/10",
           "comment": "Good protein balance. Sodium slightly high. Suggest drinking water."
+        }
+      },
+      "roadmap": {
+        "title": "Health Roadmap",
+        "steps": {
+          "s1": {
+            "phase": "Phase 1: Awareness",
+            "title": "Fighting Hidden Hunger",
+            "desc": "Analyze micro-nutrient deficiencies in user diets to combat 'hidden hunger' in urban populations through smart suggestions."
+          },
+          "s2": {
+            "phase": "Phase 2: Behavior",
+            "title": "Preventative Health Shield",
+            "desc": "Partner with local clinics to identify early warning signs of lifestyle diseases (diabetes, obesity) via long-term dietary trend analysis."
+          },
+          "s3": {
+            "phase": "Phase 3: Sustainability",
+            "title": "Farm-to-Fork Transparency",
+            "desc": "Connect users directly with sustainable local food sources, promoting organic produce and reducing food supply chain waste."
+          }
         }
       },
       "screenshots": {
@@ -323,7 +383,7 @@
         "Cultural Heritage",
         "Entertainment"
       ],
-      "longDescription": "Lenormand AI redefines digital fortune-telling. Unlike random generators, it uses sophisticated AI agents (Reader Personalities) like 'Madame Iris' or 'GenZ Chu Pi' to interpret card pairs (Pairing) in the context of the user's specific life questions.",
+      "longDescription": "Lenormand AI is where heritage meets high-tech. It re-engineers the 19th-century 'Petit Lenormand' system into a dynamic digital oracle. Instead of cold, randomized outputs, it employs sophisticated Reader Personas—AI agents calibrated with distinct psychological profiles—to interpret card spreads with human-like nuance and empathy.",
       "features": {
         "personalities": {
           "title": "Reader Personas",
@@ -346,6 +406,26 @@
           "analyzing": "Reading destiny...",
           "grade": "Outlook: POSITIVE",
           "comment": "The Sun card illuminates the Letter. Good news is imminent."
+        }
+      },
+      "roadmap": {
+        "title": "Spiritual Journey",
+        "steps": {
+          "s1": {
+            "phase": "Phase 1: Preservation",
+            "title": "Digital Folklore Library",
+            "desc": "Archive and train personalized models on dying indigenous divination methods to preserve cultural heritage for future generations."
+          },
+          "s2": {
+            "phase": "Phase 2: Insight",
+            "title": "Therapeutic AI Companion",
+            "desc": "Evolve the Oracle into a mental wellness checkpoint, identifying signs of user distress and offering gentle, grounded guidance."
+          },
+          "s3": {
+            "phase": "Phase 3: Wisdom",
+            "title": "Collective Consciousness",
+            "desc": "Anonymized sentiment analysis of global user queries to generate 'spiritual weather reports' reflecting the emotional state of the world."
+          }
         }
       },
       "screenshots": {
@@ -410,7 +490,7 @@
         "Automation",
         "Analytics"
       ],
-      "longDescription": "AI Gradix is the ultimate Teaching Assistant. It combines OCR and Generative AI to grade both multiple-choice and essay questions with human-like reasoning. Beyond grading, it assists in 5512-compliant lesson planning and student performance tracking.",
+      "longDescription": "AI Gradix redefines the educational workflow. It serves as an tireless Teaching Assistant that fuses OCR with Generative AI to understand student handwriting and logic. By automating the mechanical aspects of grading and lesson planning, it returns the most valuable asset to teachers: time for face-to-face mentorship.",
       "features": {
         "grading": {
           "title": "Smart Grading",
@@ -433,6 +513,26 @@
           "analyzing": "Grading papers...",
           "grade": "Efficiency: 30x Faster",
           "comment": "30 papers graded in 45 seconds. Mean score: 7.8"
+        }
+      },
+      "roadmap": {
+        "title": "Education Roadmap",
+        "steps": {
+          "s1": {
+            "phase": "Phase 1: Equality",
+            "title": "Closing the Resource Gap",
+            "desc": "Provide rural schools with Ivy-league standard lesson planning and grading tools, leveling the playing field for underprivileged students."
+          },
+          "s2": {
+            "phase": "Phase 2: Personalization",
+            "title": "No Student Left Behind",
+            "desc": "Detect learning disabilities and gaps early through pattern analysis, suggesting personalized remedial content automatically."
+          },
+          "s3": {
+            "phase": "Phase 3: Empowerment",
+            "title": "The Socratic Teacher",
+            "desc": "Shift AI from 'grader' to 'tutor', engaging students in Socratic dialogue to foster critical thinking rather than rote memorization."
+          }
         }
       },
       "screenshots": {

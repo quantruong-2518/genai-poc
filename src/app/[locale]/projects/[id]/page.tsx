@@ -93,10 +93,47 @@ export default async function ProjectDetail({
       src: `/${img}`,
       caption: t(`${pKey}.screenshots.s${idx + 1}`),
     }));
+  } else if (pKey === 'eat-what') {
+    const eatWhatImages = [
+      'eat-what_1.png',
+      'eat-what_2.png',
+      'eat-what_3.png',
+      'eat-what_4.png',
+      'eat-what_5.png',
+      'eat-what_6.png',
+    ];
+    screenshots = eatWhatImages.map((img, idx) => ({
+      src: `/${img}`,
+      caption: t(`${pKey}.screenshots.s${idx + 1}`),
+    }));
+  } else if (pKey === 'lenomand') {
+    const lenomandImages = [
+      'lenomand_1.png',
+      'lenomand_2.png',
+      'lenomand_3.png',
+      'lenomand_4.png',
+      'lenomand_5.png',
+      'lenomand_6.png',
+    ];
+    screenshots = lenomandImages.map((img, idx) => ({
+      src: `/${img}`,
+      caption: t(`${pKey}.screenshots.s${idx + 1}`),
+    }));
+  } else if (pKey === 'edtech') {
+    const edtechImages = [
+      'edtech_1.png',
+      'edtech_2.png',
+      'edtec_3.png', // Note: source file has typo 'edtec_3.png'
+      'edtech_4.png',
+      'edtech_5.png',
+      'edtech_6.png',
+    ];
+    screenshots = edtechImages.map((img, idx) => ({
+      src: `/${img}`,
+      caption: t(`${pKey}.screenshots.s${idx + 1}`),
+    }));
   } else {
-    // Default fallback (EatWhat, Lenomand, EdTech)
-    // We assume images are named {pKey}_s{i}.jpg or similar placeholder
-    // Currently using the pattern pKey + _s{i}.jpg
+    // Fallback
     const count = 4;
     screenshots = Array.from({ length: count }).map((_, idx) => ({
       src: `/images/${pKey}_s${idx + 1}.jpg`,
@@ -300,7 +337,7 @@ export default async function ProjectDetail({
         <div className="container mx-auto max-w-5xl px-6 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4">
-              {t(`roadmap.title`)}
+              {t(`${pKey}.roadmap.title`)}
             </h2>
             <p className="text-zinc-500 max-w-xl mx-auto">
               Strategic vision and technological milestones for the next phase
@@ -311,19 +348,19 @@ export default async function ProjectDetail({
           <RoadmapVisualizer
             steps={[
               {
-                phase: t(`roadmap.steps.s1.phase`),
-                title: t(`roadmap.steps.s1.title`),
-                desc: t(`roadmap.steps.s1.desc`),
+                phase: t(`${pKey}.roadmap.steps.s1.phase`),
+                title: t(`${pKey}.roadmap.steps.s1.title`),
+                desc: t(`${pKey}.roadmap.steps.s1.desc`),
               },
               {
-                phase: t(`roadmap.steps.s2.phase`),
-                title: t(`roadmap.steps.s2.title`),
-                desc: t(`roadmap.steps.s2.desc`),
+                phase: t(`${pKey}.roadmap.steps.s2.phase`),
+                title: t(`${pKey}.roadmap.steps.s2.title`),
+                desc: t(`${pKey}.roadmap.steps.s2.desc`),
               },
               {
-                phase: t(`roadmap.steps.s3.phase`),
-                title: t(`roadmap.steps.s3.title`),
-                desc: t(`roadmap.steps.s3.desc`),
+                phase: t(`${pKey}.roadmap.steps.s3.phase`),
+                title: t(`${pKey}.roadmap.steps.s3.title`),
+                desc: t(`${pKey}.roadmap.steps.s3.desc`),
               },
             ]}
           />

@@ -56,18 +56,18 @@
         "steps": {
           "s1": {
             "phase": "Giai đoạn 1: Nền tảng",
-            "title": "Cốt lõi AI Resume",
-            "desc": "Hoàn thiện thuật toán phân tích và chấm điểm CV sử dụng GPT-4o."
+            "title": "Bình Dân Hóa sự nghiệp",
+            "desc": "Ra mắt công cụ chẩn đoán miễn phí giúp 10,000 người tìm việc vượt qua rào cản ATS và hiểu rõ giá trị thị trường bản thân."
           },
           "s2": {
             "phase": "Giai đoạn 2: Mở rộng",
-            "title": "Interview Coach Agent",
-            "desc": "Phân tích giọng nói thời gian thực và phỏng vấn thử với Avatar kỹ thuật số."
+            "title": "Động Cơ Thực Tài",
+            "desc": "Bài trừ thiên kiến tuyển dụng bằng các Agent phỏng vấn mù, làm nổi bật tiềm năng hơn là bằng cấp, hợp tác với các doanh nghiệp cởi mở."
           },
           "s3": {
             "phase": "Giai đoạn 3: Hệ sinh thái",
-            "title": "Dự báo thị trường việc làm",
-            "desc": "Phân tích xu hướng kinh tế vĩ mô để đề xuất chuyển đổi nghề nghiệp đón đầu xu thế."
+            "title": "Dịch Chuyển Xã Hội",
+            "desc": "Thiết lập mạng lưới nhân tài phi tập trung nơi kỹ năng—chứ không phải vị trí địa lý hay xuất thân—quyết định cơ hội đổi đời."
           }
         }
       },
@@ -158,6 +158,26 @@
           "comment": "Luồng đi hợp lý. Thời gian di chuyển thấp. Ngân sách dự kiến: 1.8tr (An toàn)."
         }
       },
+      "roadmap": {
+        "title": "Lộ Trình Tiến Hóa",
+        "steps": {
+          "s1": {
+            "phase": "Giai đoạn 1: Kết nối",
+            "title": "Hồi Sinh Kinh Tế Địa Phương",
+            "desc": "Ưu tiên gợi ý các hàng quán gia đình và điểm đến ẩn mình để điều hướng dòng tiền du lịch về trực tiếp cộng đồng bản địa."
+          },
+          "s2": {
+            "phase": "Giai đoạn 2: Trải nghiệm",
+            "title": "Giao Thức Du Lịch Xanh",
+            "desc": "Tích hợp theo dõi dấu chân carbon và tối ưu hóa lộ trình thân thiện môi trường để giảm thiểu tác động tiêu cực của du lịch."
+          },
+          "s3": {
+            "phase": "Giai đoạn 3: Ngôi Làng Toàn Cầu",
+            "title": "Cầu Nối Văn Hóa AI",
+            "desc": "Triển khai Agent phiên dịch văn hóa thời gian thực, giải thích phong tục và lịch sử địa phương, nuôi dưỡng sự thấu cảm đa văn hóa."
+          }
+        }
+      },
       "screenshots": {
         "s1": "Hội Thoại Nâng Cao: Hiểu ngữ cảnh phức tạp (ngân sách, sở thích, thời tiết).",
         "s2": "Xử Lý Logic: Tinh chỉnh các trường hợp ngoại lệ và ràng buộc của người dùng.",
@@ -237,6 +257,26 @@
           "comment": "Đã gỡ băng. Đã tóm tắt. Đã render ảnh. Quy trình hoàn thành."
         }
       },
+      "roadmap": {
+        "title": "Tầm Nhìn Tương Lai",
+        "steps": {
+          "s1": {
+            "phase": "Giai đoạn 1: Tiếp cận",
+            "title": "Xóa Mù Chữ AI",
+            "desc": "Mã nguồn mở hóa các module tạo sinh cốt lõi để hạ thấp rào cản gia nhập cho các nhà sáng tạo phi kỹ thuật tại các nước đang phát triển."
+          },
+          "s2": {
+            "phase": "Giai đoạn 2: Sáng tạo",
+            "title": "Bản Quyền AI Đạo Đức",
+            "desc": "Triển khai chứng thực nội dung C2PA bất biến để chống tin giả và bảo vệ quyền tác giả nghệ sĩ trong kỷ nguyên tạo sinh."
+          },
+          "s3": {
+            "phase": "Giai đoạn 3: Cộng sinh",
+            "title": "Đồng Sáng Tạo Nhân-Máy",
+            "desc": "Chuyển dịch từ 'AI thay thế chuyên gia' sang 'AI khuếch đại biểu đạt con người', mở ra thời kỳ phục hưng nghệ thuật số mới."
+          }
+        }
+      },
       "screenshots": {
         "s1": "Studio Hợp nhất: Text, Image, Audio trong một màn hình",
         "s2": "Image Generator: Giao diện prompt DALL-E 3",
@@ -298,7 +338,7 @@
         "Gamification",
         "Mobile First"
       ],
-      "longDescription": "WhatEat không chỉ là công cụ tính calo; đây là một Chuyên gia Dinh dưỡng AI chủ động. Sử dụng thị giác máy tính (Gemini/GPT-4V), ứng dụng phân tích ảnh chụp món ăn tức thì. Hệ thống giữ chân người dùng thông qua Gamification với nhiệm vụ hàng ngày, chuỗi thành tích và bảng xếp hạng.",
+      "longDescription": "WhatEat biến việc theo dõi dinh dưỡng từ gánh nặng thành lối sống. Xứng danh một Chuyên gia Dinh dưỡng AI chủ động, ứng dụng dùng thị giác máy tính để 'giải mã' bữa ăn thành dữ liệu hành động ngay lập tức. Nền tảng giữ chân người dùng không phải bằng sự khắt khe, mà bằng lộ trình game hóa, các nhiệm vụ xã hội và sự khích lệ tích cực.",
       "features": {
         "ai_nutrition": {
           "title": "AI Quét Món Ăn",
@@ -321,6 +361,26 @@
           "analyzing": "Phân tích dinh dưỡng...",
           "grade": "Điểm Sức Khỏe: 8.5/10",
           "comment": "Cân bằng đạm tốt. Natri hơi cao. Gợi ý uống thêm nước."
+        }
+      },
+      "roadmap": {
+        "title": "Hành Trình Sức Khỏe",
+        "steps": {
+          "s1": {
+            "phase": "Giai đoạn 1: Nhận thức",
+            "title": "Chống Nạn Đói Tiềm Ẩn",
+            "desc": "Phân tích thiếu hụt vi chất trong chế độ ăn để chống lại 'nạn đói tiềm ẩn' ở dân cư đô thị thông qua các gợi ý bổ sung thực phẩm thông minh."
+          },
+          "s2": {
+            "phase": "Giai đoạn 2: Hành vi",
+            "title": "Lá Chắn Y Tế Dự Phòng",
+            "desc": "Phối hợp với phòng khám địa phương để phát hiện sớm dấu hiệu bệnh lối sống (tiểu đường, béo phì) qua phân tích xu hướng ăn uống dài hạn."
+          },
+          "s3": {
+            "phase": "Giai đoạn 3: Bền vững",
+            "title": "Minh Bạch Từ Nông Trại",
+            "desc": "Kết nối người dùng trực tiếp với nguồn thực phẩm sạch địa phương, thúc đẩy nông sản hữu cơ và giảm lãng phí chuỗi cung ứng."
+          }
         }
       },
       "screenshots": {
@@ -385,7 +445,7 @@
         "Văn hóa",
         "Giải trí"
       ],
-      "longDescription": "Lenormand AI tái định nghĩa bói bài kỹ thuật số. Không giống như các trình tạo ngẫu nhiên, nó sử dụng các tác nhân AI tinh vi (Reader Personalities) như 'Madame Iris' nghiêm khắc hay 'Chu Pi' GenZ để giải thích các cặp bài trong ngữ cảnh cụ thể của người dùng.",
+      "longDescription": "Lenormand AI là điểm chạm giữa di sản văn hóa và công nghệ cao. Dự án tái cấu trúc hệ thống 'Petit Lenormand' thế kỷ 19 thành một nhà tiên tri kỹ thuật số sống động. Thay vì các kết quả ngẫu nhiên vô hồn, hệ thống sử dụng các 'Reader Personas'—những tác nhân AI được tinh chỉnh với hồ sơ tâm lý riêng biệt—để giải bài với sự tinh tế và thấu cảm như con người.",
       "features": {
         "personalities": {
           "title": "Nhân Cách Reader",
@@ -408,6 +468,26 @@
           "analyzing": "Đọc vận mệnh...",
           "grade": "Triển vọng: TÍCH CỰC",
           "comment": "Lá Mặt Trời soi sáng lá Thư. Tin tốt đang đến gần."
+        }
+      },
+      "roadmap": {
+        "title": "Hành Trình Tâm Linh",
+        "steps": {
+          "s1": {
+            "phase": "Giai đoạn 1: Bảo tồn",
+            "title": "Thư Viện Văn Hóa Số",
+            "desc": "Lưu trữ và huấn luyện mô hình cá nhân hóa dựa trên các phương pháp bói toán dân gian đang mai một để bảo tồn di sản cho thế hệ sau."
+          },
+          "s2": {
+            "phase": "Giai đoạn 2: Thấu suốt",
+            "title": "Người Đồng Hành Trị Liệu",
+            "desc": "Nâng cấp Oracle thành điểm kiểm tra sức khỏe tinh thần, nhận diện dấu hiệu bất ổn và đưa ra lời khuyên nhẹ nhàng, thực tế."
+          },
+          "s3": {
+            "phase": "Giai đoạn 3: Trí tuệ",
+            "title": "Tâm Thức Tập Thể",
+            "desc": "Phân tích cảm xúc ẩn danh từ các câu hỏi toàn cầu để tạo ra 'Bản tin thời tiết tâm linh', phản ánh trạng thái cảm xúc của thế giới."
+          }
         }
       },
       "screenshots": {
@@ -472,7 +552,7 @@
         "Tự động hóa",
         "Phân tích"
       ],
-      "longDescription": "AI Gradix là Trợ lý Giảng dạy tối thượng. Nó kết hợp OCR và AI Tạo sinh để chấm cả câu hỏi trắc nghiệm và tự luận với tư duy như con người. Ngoài chấm điểm, nó còn hỗ trợ soạn giáo án chuẩn 5512 và theo dõi năng lực học sinh.",
+      "longDescription": "AI Gradix tái định nghĩa quy trình giáo dục. Đây là một Trợ lý Giảng dạy không biết mệt mỏi, kết hợp OCR và AI Tạo sinh để thấu hiểu chữ viết và tư duy của học sinh. Bằng cách tự động hóa các khâu chấm điểm và soạn bài cơ học, Gradix trả lại cho giáo viên tài sản quý giá nhất: thời gian để tương tác và dẫn dắt học trò.",
       "features": {
         "grading": {
           "title": "Chấm Điểm Thông Minh",
@@ -495,6 +575,26 @@
           "analyzing": "Đang chấm bài...",
           "grade": "Hiệu suất: Nhanh gấp 30x",
           "comment": "30 bài chấm trong 45 giây. Điểm trung bình: 7.8"
+        }
+      },
+      "roadmap": {
+        "title": "Tương Lai Giáo Dục",
+        "steps": {
+          "s1": {
+            "phase": "Giai đoạn 1: Bình đẳng",
+            "title": "Xóa Nhòa Khoảng Cách",
+            "desc": "Cung cấp công cụ soạn bài và chấm điểm chuẩn quốc tế cho các trường vùng sâu, san phẳng sân chơi cho học sinh hoàn cảnh khó khăn."
+          },
+          "s2": {
+            "phase": "Giai đoạn 2: Cá nhân hóa",
+            "title": "Không Ai Bị Bỏ Lại",
+            "desc": "Phát hiện sớm khuyết tật học tập và lỗ hổng kiến thức qua phân tích mẫu, đề xuất nội dung bồi dưỡng cá nhân hóa tự động."
+          },
+          "s3": {
+            "phase": "Giai đoạn 3: Trao quyền",
+            "title": "Người Thầy Socrates",
+            "desc": "Chuyển dịch AI từ 'người chấm điểm' sang 'gia sư', thu hút học sinh vào đối thoại gợi mở tư duy phản biện thay vì học vẹt."
+          }
         }
       },
       "screenshots": {
