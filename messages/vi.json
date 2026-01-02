@@ -1,0 +1,267 @@
+{
+  "Metadata": {
+    "title": "Hệ Sinh Thái GenAI Nội Bộ - ITK",
+    "description": "Trung tâm tập trung cho R&D GenAI"
+  },
+  "Dashboard": {
+    "badge": "Hệ Sinh Thái GenAI Nội Bộ",
+    "title": "Lò Luyện AI (The Foundry)",
+    "subtitle": "Trung tâm ươm mầm, điều phối và triển khai các dịch vụ Generative AI thế hệ mới.",
+    "footer": "Hệ thống hoạt động bình thường",
+    "explore": "Khám phá Dự án"
+  },
+  "Projects": {
+    "jobpang": {
+      "title": "JobPang AI Orchestrator",
+      "description": "Hạ tầng AI tự hành, tất định và có khả năng mở rộng, điều phối toàn bộ vòng đời phát triển sự nghiệp—từ chẩn đoán đến chiến lược.",
+      "tags": [
+        "NestJS",
+        "GPT-4o",
+        "Điều phối"
+      ],
+      "impact": "Giảm 60% chi phí tuyển dụng thông qua việc tự động hóa sàng lọc ứng viên và hướng nghiệp tất định.",
+      "categories": [
+        "Điều phối AI",
+        "Agent tự hành",
+        "Phân tích CV",
+        "Career Coach"
+      ],
+      "longDescription": "JobPang là 'Bộ não' đứng sau nền tảng Career Coaching thế hệ mới. Đây không phải là chatbot—nó là một AI Orchestrator cấp doanh nghiệp, tự động hóa công việc của một chuyên gia Headhunter cao cấp. Hệ thống thực hiện chẩn đoán sâu Resume, soạn thảo Thư ứng tuyển thuyết phục và đóng vai trò người cố vấn tất định (deterministic mentor) để dẫn dắt người dùng mà không gặp lỗi ảo giác.",
+      "features": {
+        "diagnosis": {
+          "title": "Chuyên Gia Thẩm Định CV",
+          "desc": "Vượt xa việc bắt từ khóa. AI đánh giá tư duy logic, cấu trúc và sức thuyết phục bằng cơ chế Multi-agent critique."
+        },
+        "orchestration": {
+          "title": "Cố Vấn Chống Ảo Giác",
+          "desc": "Động cơ Q&A tất định cung cấp lời khuyên sự nghiệp dựa trên sự thật, có cấu trúc, không lan man."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> NHẬN FILE: CV_NguyenVanA.pdf (backend-dev)",
+          "step2": ">> MODULE: ResumeDiagnosis | Chiến thuật: PHÂN_TÍCH_SÂU",
+          "step3": ">> TÍNH ĐIỂM: Kinh nghiệm (trọng số: 0.4) | Kỹ năng (0.3)",
+          "step4": ">> PHÁT HIỆN: Thiếu chỉ số định lượng (KPIs) trong dự án cũ",
+          "step5": ">> KẾT QUẢ: Trả về JSON Góp ý chi tiết + Lộ trình cải thiện"
+        },
+        "scanner": {
+          "analyzing": "Đang thẩm định tư duy sự nghiệp...",
+          "grade": "Điểm Impact: 72/100",
+          "comment": "Chuyên môn tốt, nhưng chưa chứng minh được ROI cho doanh nghiệp. Khuyên dùng phương pháp STAR cho 'Dự án X'."
+        }
+      },
+      "screenshots": {
+        "s1": "Thẩm định Resume: Phân tích sâu lỗ hổng kỹ năng",
+        "s2": "Smart Matching: AI ghép nối ứng viên với vị trí lý tưởng",
+        "s3": "Báo cáo Chi tiết: Chẩn đoán sự nghiệp toàn diện",
+        "s4": "Góc nhìn Tổng thể: Hồ sơ ứng viên 360 độ",
+        "s5": "Trung tâm Cộng đồng: Học hỏi và chia sẻ tài nguyên",
+        "s6": "Lộ trình Sự nghiệp: Quy hoạch chiến lược dài hạn"
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "React Framework",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "NestJS",
+          "desc": "Backend mở rộng",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s3": {
+          "name": "ChatGPT",
+          "desc": "Hội thoại AI",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s4": {
+          "name": "Redis",
+          "desc": "Cache hiệu năng cao",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "AWS",
+          "desc": "Hạ tầng Cloud",
+          "cat": "DevOps",
+          "icon": "Cloud"
+        },
+        "s6": {
+          "name": "TypeScript",
+          "desc": "Type Safety",
+          "cat": "Backend",
+          "icon": "Code2"
+        }
+      }
+    },
+    "monthler": {
+      "title": "Trợ Lý Du Lịch Monthler AI",
+      "description": "Người bạn đồng hành du lịch địa phương. Hỏi, Gợi ý, So sánh và Lên kế hoạch cho chuyến đi hoàn hảo.",
+      "tags": [
+        "Travel Tech",
+        "Gợi ý thông minh",
+        "Du lịch địa phương"
+      ],
+      "impact": "Tăng 35% tỷ lệ đặt tour địa phương nhờ cá nhân hóa lịch trình qua hội thoại AI.",
+      "categories": [
+        "Travel Tech",
+        "AI Agent",
+        "Recommender",
+        "Du lịch địa phương"
+      ],
+      "longDescription": "Monthler là 'Thổ địa' AI của bạn. Khác với các trang đặt phòng chung chung, Monthler hiểu rõ bối cảnh—ngân sách, sở thích, thời tiết—để gợi ý các 'Viên ngọc ẩn' (Hidden Gems). Hệ thống dẫn dắt người dùng qua luồng hội thoại tự nhiên: từ lúc tìm ý tưởng đến khi chốt đơn và xuất lịch trình.",
+      "features": {
+        "security": {
+          "title": "Hướng Dẫn Viên Số",
+          "desc": "Động cơ RAG gợi ý các trải nghiệm địa phương chân thực, tránh các bẫy du lịch (tourist traps)."
+        },
+        "cost": {
+          "title": "Lập Lịch Trình Tự Động",
+          "desc": "Tự động tạo lịch trình từng ngày với tuyến đường tối ưu và ước tính ngân sách thực tế."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> USER: 'Lên lịch food tour 2 ngày ở Đà Nẵng dưới 2 triệu'",
+          "step2": ">> INTENT: Phát hiện MỤC_TIÊU=Food, ĐỊA_ĐIỂM=Đà Nẵng, NGÂN_SÁCH=2tr",
+          "step3": ">> SEARCH: Truy vấn DB 'Quan_An_Dia_Phuong'...",
+          "step4": ">> RANK: Chấm điểm 'Mì Quảng Bà Mua' (Score: 0.98)...",
+          "step5": ">> OUTPUT: Tạo bản đồ lịch trình 5 điểm dừng."
+        },
+        "scanner": {
+          "analyzing": "Tối ưu hóa logic tuyến đường...",
+          "grade": "Hiệu quả di chuyển: 95%",
+          "comment": "Luồng đi hợp lý. Thời gian di chuyển thấp. Ngân sách dự kiến: 1.8tr (An toàn)."
+        }
+      },
+      "screenshots": {
+        "s1": "Hội Thoại Nâng Cao: Hiểu ngữ cảnh phức tạp (ngân sách, sở thích, thời tiết).",
+        "s2": "Xử Lý Logic: Tinh chỉnh các trường hợp ngoại lệ và ràng buộc của người dùng.",
+        "s3": "Lập Kế Hoạch Chiến Lược: AI vẽ bản đồ tối ưu lộ trình và lịch trình.",
+        "s4": "Thực Thi Cuối Cùng: Tạo voucher chi tiết và xác nhận dịch vụ."
+      },
+      "stack": {
+        "s1": {
+          "name": "NestJS",
+          "desc": "Backend API mở rộng",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s2": {
+          "name": "OpenAI 4o",
+          "desc": "Động cơ suy luận",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "TypeORM",
+          "desc": "Quản lý dữ liệu MySQL",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s4": {
+          "name": "Redis",
+          "desc": "Caching phiên làm việc",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "Swagger",
+          "desc": "Tài liệu hóa API",
+          "cat": "DevOps",
+          "icon": "Code2"
+        }
+      }
+    },
+    "genai-poc": {
+      "title": "GenAI Multi-Modal Studio",
+      "description": "Sân chơi tất-cả-trong-một cho Tạo văn bản, Hình ảnh, Âm thanh và Vision. Một bản thiết kế SaaS full-stack.",
+      "tags": [
+        "Full-Stack",
+        "Đa phương thức",
+        "SaaS"
+      ],
+      "impact": "Tăng tốc độ đưa ứng dụng AI đa phương thức ra thị trường nhờ bản thiết kế chuẩn Production.",
+      "categories": [
+        "Đa phương thức",
+        "SaaS Blueprint",
+        "R&D",
+        "Full-Stack"
+      ],
+      "longDescription": "Con dao Thụy Sĩ của thế giới AI. Dự án này trình diễn một kiến trúc SaaS hoàn chỉnh tích hợp 'Bộ Tứ' quyền lực: Text, Image, Audio, và Vision. Giao diện Next.js hiện đại kết hợp với backend NestJS mạnh mẽ.",
+      "features": {
+        "multimodal": {
+          "title": "GenAI 4 Chiều",
+          "desc": "Chuyển đổi mượt mà giữa tạo ảnh DALL-E, gỡ băng Whisper và viết lách GPT-4."
+        },
+        "saas": {
+          "title": "Kiến Trúc SaaS",
+          "desc": "Cấu trúc Production-ready với Auth, Dashboard và trang Marketing cấu hình sẵn."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> TÁC VỤ: Chuỗi tạo đa phương thức",
+          "step2": ">> AUDIO: Gỡ băng file 'voice_memo.mp3' (Whisper)...",
+          "step3": ">> TEXT: Tóm tắt nội dung để tạo Prompt ảnh...",
+          "step4": ">> IMAGE: Đang vẽ ảnh DALL-E 3 (Style: Cyberpunk)...",
+          "step5": ">> HOÀN TẤT: Đã upload lên S3. Tạo URL chia sẻ."
+        },
+        "scanner": {
+          "analyzing": "Xử lý Pipeline Đa phương tiện...",
+          "grade": "Tình trạng: SẴN SÀNG",
+          "comment": "Đã gỡ băng. Đã tóm tắt. Đã render ảnh. Quy trình hoàn thành."
+        }
+      },
+      "screenshots": {
+        "s1": "Studio Hợp nhất: Text, Image, Audio trong một màn hình",
+        "s2": "Image Generator: Giao diện prompt DALL-E 3",
+        "s3": "Phòng Lab Gỡ băng: Xem sóng âm thanh upload",
+        "s4": "Text-to-Speech: Chỉnh giọng đọc và ngữ điệu",
+        "s5": "Thư viện: Lưu trữ lịch sử tạo nội dung"
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js 14",
+          "desc": "App Router & Server Actions",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "TailwindCSS",
+          "desc": "Phát triển giao diện nhanh",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s3": {
+          "name": "Framer Motion",
+          "desc": "Hiệu ứng chuyển động",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s4": {
+          "name": "NestJS",
+          "desc": "Dịch vụ API Backend",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s5": {
+          "name": "Whisper",
+          "desc": "Mô hình chuyển giọng thành văn bản",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s6": {
+          "name": "DALL-E 3",
+          "desc": "Mô hình tạo ảnh",
+          "cat": "AI",
+          "icon": "Cloud"
+        }
+      }
+    }
+  }
+}

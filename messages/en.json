@@ -1,0 +1,267 @@
+{
+  "Metadata": {
+    "title": "GenAI Internal Ecosystem - ITK",
+    "description": "Centralized hub for GenAI R&D"
+  },
+  "Dashboard": {
+    "badge": "Internal GenAI Ecosystem",
+    "title": "The AI Foundry",
+    "subtitle": "Centralized hub for incubating, orchestrating, and deploying next-generation Generative AI services.",
+    "footer": "System Operational",
+    "explore": "Explore Project"
+  },
+  "Projects": {
+    "jobpang": {
+      "title": "JobPang AI Orchestrator",
+      "description": "An autonomous, deterministic, and scalable AI infrastructure that orchestrates the entire career development lifecycle—from diagnostics to strategy.",
+      "tags": [
+        "NestJS",
+        "GPT-4o",
+        "Orchestration"
+      ],
+      "impact": "Reduces hiring costs by 60% through autonomous candidate screening and deterministic career guidance.",
+      "categories": [
+        "Orchestration",
+        "AI Agents",
+        "Resume Analysis",
+        "Career Coaching"
+      ],
+      "longDescription": "JobPang is the 'Brain' behind the next-generation Career Coaching platform. It is not a chatbot—it is an Enterprise AI Orchestrator that automates the work of a senior headhunter. It performs deep diagnostics on Resumes, drafts persuasive Cover Letters, and acts as a deterministic mentor to guide users through their career journey without hallucination.",
+      "features": {
+        "diagnosis": {
+          "title": "AI Resume Auditor",
+          "desc": "Goes beyond keywords. It evaluates logic, structure, and persuasiveness using multi-agent critique."
+        },
+        "orchestration": {
+          "title": "Anti-Hallucination Mentor",
+          "desc": "A deterministic Q&A engine that provides factual, structured career advice, not just chatty responses."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> INCOMING: Resume_JohnDoe.pdf (software-engineer)",
+          "step2": ">> MODULE: ResumeDiagnosis | Strategy: DEEP_ANALYSIS",
+          "step3": ">> SCORING: Experience (weight: 0.4) | Skills (weight: 0.3)",
+          "step4": ">> DETECTED: Lack of quantifiable metrics in 'Project A'",
+          "step5": ">> OUTPUT: Structured JSON Feedback + Improvement Plan"
+        },
+        "scanner": {
+          "analyzing": "Auditing Career Logic...",
+          "grade": "Impact Score: 72/100",
+          "comment": "Good technical depth, but fails to demonstrate business ROI. Suggest rewriting 'Project X' with STAR method."
+        }
+      },
+      "screenshots": {
+        "s1": "Resume Audit: Deep analysis of skill gaps",
+        "s2": "Smart Matching: AI aligning candidates with ideal roles",
+        "s3": "In-Depth Report: Comprehensive career diagnostics",
+        "s4": "Holistic View: 360-degree candidate profile",
+        "s5": "Community Hub: Peer learning and resources",
+        "s6": "Career Roadmap: Long-term strategic planning"
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "React Framework",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "NestJS",
+          "desc": "Scalable Backend",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s3": {
+          "name": "ChatGPT",
+          "desc": "Conversational AI",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s4": {
+          "name": "Redis",
+          "desc": "High-perf Cache",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "AWS",
+          "desc": "Cloud Infrastructure",
+          "cat": "DevOps",
+          "icon": "Cloud"
+        },
+        "s6": {
+          "name": "TypeScript",
+          "desc": "Type Safety",
+          "cat": "Backend",
+          "icon": "Code2"
+        }
+      }
+    },
+    "monthler": {
+      "title": "Monthler AI Travel Agent",
+      "description": "Local tourism companion that plans personalized itineraries. Ask, Recommend, Compare, and Export your perfect trip.",
+      "tags": [
+        "Travel Tech",
+        "Recommender",
+        "Local Tourism"
+      ],
+      "impact": "Boosts local booking conversion by 35% via hyper-personalized, chat-based itinerary planning.",
+      "categories": [
+        "Travel Tech",
+        "AI Agent",
+        "Recommender",
+        "Local Tourism"
+      ],
+      "longDescription": "Monthler is your local travel insider powered by AI. Unlike generic booking sites, it understands context—budget, vibe, and weather—to curate 'Local Gems' itineraries. It guides users through a natural conversation flow: from initial discovery to final booking and itinerary export.",
+      "features": {
+        "security": {
+          "title": "Smart Local Guide",
+          "desc": "RAG-powered engine that suggests authentic local experiences, avoiding tourist traps."
+        },
+        "cost": {
+          "title": "Auto-Itinerary Planner",
+          "desc": "Generates day-by-day schedules with optimized routes and real-time budget estimation."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> USER: 'Plan a 2-day food tour in Da Nang under $100'",
+          "step2": ">> INTENT: Detect CATEGORY=Food, LOC=DaNang, BUDGET=100",
+          "step3": ">> SEARCH: Querying 'Local_Eateries' vector DB...",
+          "step4": ">> RANK: Scoring 'Mi Quang Ba Mua' (Score: 0.98)...",
+          "step5": ">> OUTPUT: Generated 5-stop itinerary map."
+        },
+        "scanner": {
+          "analyzing": "Optimizing Route Logic...",
+          "grade": "Route Efficiency: 95%",
+          "comment": "Logical flow established. Travel times minimized. Budget utilization: $85 (Safe)."
+        }
+      },
+      "screenshots": {
+        "s1": "Conversational Intake: Complex context understanding (budget, vibe, weather).",
+        "s2": "Logic Refinement: Handling edge cases and user constraints iteratively.",
+        "s3": "Strategic Planning: AI mapping optimal routes and schedules.",
+        "s4": "Final Execution: Detailed voucher generation and confirmation."
+      },
+      "stack": {
+        "s1": {
+          "name": "NestJS",
+          "desc": "Scalable Backend API",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s2": {
+          "name": "OpenAI 4o",
+          "desc": "Reasoning Engine",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "TypeORM",
+          "desc": "MySQL Data Management",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s4": {
+          "name": "Redis",
+          "desc": "Session Caching",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "Swagger",
+          "desc": "API Documentation",
+          "cat": "DevOps",
+          "icon": "Code2"
+        }
+      }
+    },
+    "genai-poc": {
+      "title": "GenAI Multi-Modal Studio",
+      "description": "All-in-one playground for Text, Image, Audio, and Vision generation. A full-stack SaaS blueprint.",
+      "tags": [
+        "Full-Stack",
+        "Multi-Modal",
+        "SaaS"
+      ],
+      "impact": "Accelerates time-to-market for multi-modal AI applications by providing a production-ready blueprint.",
+      "categories": [
+        "Multi-Modal",
+        "SaaS Blueprint",
+        "R&D",
+        "Full-Stack"
+      ],
+      "longDescription": "The Swiss Army Knife of AI. This project demonstrates a complete SaaS architecture integrating the 'Big Four' modalities: Text, Image, Audio, and Vision. It features a modern Next.js frontend coupled with a powerful NestJS processing backend.",
+      "features": {
+        "multimodal": {
+          "title": "4-Dimensional GenAI",
+          "desc": "Seamlessly switch between generating DALL-E 3 images, Whisper transcription, and GPT-4 writing."
+        },
+        "saas": {
+          "title": "SaaS Architecture",
+          "desc": "Production-ready structure with Auth, Dashboard, and Marketing pages pre-configured."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> TASK: Multi-modal Generation Sequence",
+          "step2": ">> AUDIO: Transcribing 'voice_memo.mp3' (Whisper)...",
+          "step3": ">> TEXT: Summarizing transcript to Image Prompt...",
+          "step4": ">> IMAGE: Generating DALL-E 3 variation (Style: Cyberpunk)...",
+          "step5": ">> FINISHED: Assets uploaded to S3. URL generated."
+        },
+        "scanner": {
+          "analyzing": "Processing Media Pipeline...",
+          "grade": "Status: READY",
+          "comment": "Audio transcribed. Summary generated. Image rendered. Workflow complete."
+        }
+      },
+      "screenshots": {
+        "s1": "Unified Studio: Text, Image, and Audio tools in one view",
+        "s2": "Image Generator: DALL-E 3 prompting interface",
+        "s3": "Transcription Lab: Waveform view of uploaded audio",
+        "s4": "Text-to-Speech: Voice selection and modulation controls",
+        "s5": "History Gallery: Archive of all generated assets"
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js 14",
+          "desc": "App Router & Server Actions",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "TailwindCSS",
+          "desc": "Rapid UI Development",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s3": {
+          "name": "Framer Motion",
+          "desc": "Smooth Animations",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s4": {
+          "name": "NestJS",
+          "desc": "Backend API Service",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s5": {
+          "name": "Whisper",
+          "desc": "Speech-to-Text Model",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s6": {
+          "name": "DALL-E 3",
+          "desc": "Image Generation Model",
+          "cat": "AI",
+          "icon": "Cloud"
+        }
+      }
+    }
+  }
+}
