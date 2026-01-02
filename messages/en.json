@@ -6,7 +6,7 @@
   "Dashboard": {
     "badge": "Internal GenAI Ecosystem",
     "title": "The AI Foundry",
-    "subtitle": "Centralized hub for incubating, orchestrating, and deploying next-generation Generative AI services.",
+    "subtitle": "Designing the future with Generative AI—where raw algorithms transform into human-centric solutions.",
     "footer": "System Operational",
     "explore": "Explore Project"
   },
@@ -19,7 +19,7 @@
         "GPT-4o",
         "Orchestration"
       ],
-      "impact": "Reduces hiring costs by 60% through autonomous candidate screening and deterministic career guidance.",
+      "impact": "Streamlines the recruitment funnel by providing instant, objective candidate analysis, resulting in higher quality matches without manual screening fatigue.",
       "categories": [
         "Orchestration",
         "AI Agents",
@@ -28,113 +28,71 @@
       ],
       "longDescription": "JobPang is the 'Brain' behind the next-generation Career Coaching platform. It is not a chatbot—it is an Enterprise AI Orchestrator that automates the work of a senior headhunter. It performs deep diagnostics on Resumes, drafts persuasive Cover Letters, and acts as a deterministic mentor to guide users through their career journey without hallucination.",
       "features": {
-        "diagnosis": {
-          "title": "AI Resume Auditor",
-          "desc": "Goes beyond keywords. It evaluates logic, structure, and persuasiveness using multi-agent critique."
-        },
         "orchestration": {
-          "title": "Anti-Hallucination Mentor",
-          "desc": "A deterministic Q&A engine that provides factual, structured career advice, not just chatty responses."
+          "title": "Multi-Agent Protocol",
+          "desc": "Orchestrates 3 specialized LLM agents to review, rewrite, and strategize applications in parallel."
+        },
+        "diagnosis": {
+          "title": "Deep Resume Audit",
+          "desc": "Scans resumes for ATS compatibility, keyword density, and narrative strength with executive-level feedback."
         }
       },
+      "screenshots": {
+        "s1": "Resume Dashboard: Overview of candidate profile and optimization score.",
+        "s2": "Job Matching Engine: Real-time analysis of JD vs CV fit percentage.",
+        "s3": "In-Depth Audit: Line-by-line AI critique of resume content.",
+        "s4": "Comprehensive Report: Detailed breakdown of strengths and weaknesses.",
+        "s5": "Community Hub: Peer reviews and shared success stories.",
+        "s6": "Career Roadmap: Suggested skill acquisition path for target roles."
+      },
       "demo": {
+        "scanner": {
+          "analyzing": "Auditing Career Logic...",
+          "grade": "Impact Score: 72/100",
+          "comment": "Good technical depth, but fails to demonstrate business ROI. Suggest rewriting 'Project X' with STAR method."
+        },
         "terminal": {
           "step1": ">> INCOMING: Resume_JohnDoe.pdf (software-engineer)",
           "step2": ">> MODULE: ResumeDiagnosis | Strategy: DEEP_ANALYSIS",
           "step3": ">> SCORING: Experience (weight: 0.4) | Skills (weight: 0.3)",
           "step4": ">> DETECTED: Lack of quantifiable metrics in 'Project A'",
           "step5": ">> OUTPUT: Structured JSON Feedback + Improvement Plan"
-        },
-        "scanner": {
-          "analyzing": "Auditing Career Logic...",
-          "grade": "Impact Score: 72/100",
-          "comment": "Good technical depth, but fails to demonstrate business ROI. Suggest rewriting 'Project X' with STAR method."
         }
-      },
-      "screenshots": {
-        "s1": "Resume Audit: Deep analysis of skill gaps",
-        "s2": "Smart Matching: AI aligning candidates with ideal roles",
-        "s3": "In-Depth Report: Comprehensive career diagnostics",
-        "s4": "Holistic View: 360-degree candidate profile",
-        "s5": "Community Hub: Peer learning and resources",
-        "s6": "Career Roadmap: Long-term strategic planning"
       },
       "stack": {
         "s1": {
-          "name": "Next.js",
-          "desc": "React Framework",
-          "cat": "Frontend",
-          "icon": "Layout"
-        },
-        "s2": {
           "name": "NestJS",
           "desc": "Scalable Backend",
           "cat": "Backend",
           "icon": "Server"
         },
-        "s3": {
-          "name": "ChatGPT",
-          "desc": "Conversational AI",
+        "s2": {
+          "name": "GPT-4o",
+          "desc": "Testing Engine",
           "cat": "AI",
-          "icon": "Cloud"
+          "icon": "Bot"
         },
-        "s4": {
-          "name": "Redis",
-          "desc": "High-perf Cache",
+        "s3": {
+          "name": "BullMQ",
+          "desc": "Job Queues",
           "cat": "Backend",
-          "icon": "Database"
+          "icon": "Layers"
         },
-        "s5": {
-          "name": "AWS",
-          "desc": "Cloud Infrastructure",
-          "cat": "DevOps",
-          "icon": "Cloud"
-        },
-        "s6": {
-          "name": "TypeScript",
-          "desc": "Type Safety",
-          "cat": "Backend",
-          "icon": "Code2"
-        }
+        "s4": "TypeScript",
+        "s5": "Redis",
+        "s6": "Next.js"
       }
     },
     "monthler": {
-      "title": "Monthler AI Travel Agent",
-      "description": "Local tourism companion that plans personalized itineraries. Ask, Recommend, Compare, and Export your perfect trip.",
-      "tags": [
-        "Travel Tech",
-        "Recommender",
-        "Local Tourism"
-      ],
-      "impact": "Boosts local booking conversion by 35% via hyper-personalized, chat-based itinerary planning.",
-      "categories": [
-        "Travel Tech",
-        "AI Agent",
-        "Recommender",
-        "Local Tourism"
-      ],
-      "longDescription": "Monthler is your local travel insider powered by AI. Unlike generic booking sites, it understands context—budget, vibe, and weather—to curate 'Local Gems' itineraries. It guides users through a natural conversation flow: from initial discovery to final booking and itinerary export.",
+      "title": "Monthler AI Travel",
+      "description": "Autonomous travel planning agent for complex itineraries.",
+      "longDescription": "Monthler redefines travel planning by using autonomous agents to scan thousands of data points—flights, hotels, weather, local events—to construct the perfect hyper-personalized itinerary in seconds.",
       "features": {
         "security": {
-          "title": "Smart Local Guide",
-          "desc": "RAG-powered engine that suggests authentic local experiences, avoiding tourist traps."
+          "title": "Safety Sentinel",
+          "desc": "Real-time monitoring of travel advisories, weather alerts, and local safety measures."
         },
         "cost": {
-          "title": "Auto-Itinerary Planner",
-          "desc": "Generates day-by-day schedules with optimized routes and real-time budget estimation."
-        }
-      },
-      "demo": {
-        "terminal": {
-          "step1": ">> USER: 'Plan a 2-day food tour in Da Nang under $100'",
-          "step2": ">> INTENT: Detect CATEGORY=Food, LOC=DaNang, BUDGET=100",
-          "step3": ">> SEARCH: Querying 'Local_Eateries' vector DB...",
-          "step4": ">> RANK: Scoring 'Mi Quang Ba Mua' (Score: 0.98)...",
-          "step5": ">> OUTPUT: Generated 5-stop itinerary map."
-        },
-        "scanner": {
-          "analyzing": "Optimizing Route Logic...",
-          "grade": "Route Efficiency: 95%",
           "comment": "Logical flow established. Travel times minimized. Budget utilization: $85 (Safe)."
         }
       },
@@ -185,7 +143,7 @@
         "Multi-Modal",
         "SaaS"
       ],
-      "impact": "Accelerates time-to-market for multi-modal AI applications by providing a production-ready blueprint.",
+      "impact": "Eliminates the complexity of building multi-modal infrastructure from scratch, offering a battle-tested blueprint for rapid AI product development.",
       "categories": [
         "Multi-Modal",
         "SaaS Blueprint",
@@ -260,6 +218,267 @@
           "desc": "Image Generation Model",
           "cat": "AI",
           "icon": "Cloud"
+        }
+      }
+    },
+    "eat-what": {
+      "title": "WhatEat AI Nutritionist",
+      "description": "Smart nutrition tracker that uses AI Vision to analyze meals, calculate calories, and gamify healthy eating habits.",
+      "tags": [
+        "Health Tech",
+        "AI Vision",
+        "Gamification"
+      ],
+      "impact": "Empowers users to build sustainable eating habits through instant visual awareness and gamified positive reinforcement, rather than strict calorie counting.",
+      "categories": [
+        "AI Vision",
+        "Health Tech",
+        "Gamification",
+        "Mobile First"
+      ],
+      "longDescription": "WhatEat is not just a calorie counter; it's a proactive AI Nutritionist. By leveraging computer vision (Gemini/GPT-4V), it instantly analyzes food photos to breakdown macros. The platform keeps users engaged through a robust gamification system with quests, streaks, and a lively social feed.",
+      "features": {
+        "ai_nutrition": {
+          "title": "AI Food Scanner",
+          "desc": "Instantly identifies dishes and estimates portion sizes using multi-modal AI."
+        },
+        "gamification": {
+          "title": "Habit Building",
+          "desc": "RPG-like progression system with Daily Quests, Streaks, and Leaderboards."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> UPLOAD: 'pho_bo.jpg' (3.5MB)",
+          "step2": ">> VISION: Detecting... 'Pho Bo' (Confidence: 98%)",
+          "step3": ">> ANALYSIS: Beef (150g), Noodles (200g), Broth (300ml)",
+          "step4": ">> CALC: Total ~550 kcal | Protein: 25g",
+          "step5": ">> GAMIFY: Quest 'Protein Power' Progress: +25g"
+        },
+        "scanner": {
+          "analyzing": "Scanning nutrients...",
+          "grade": "Health Score: 8.5/10",
+          "comment": "Good protein balance. Sodium slightly high. Suggest drinking water."
+        }
+      },
+      "screenshots": {
+        "s1": "AI Camera: Real-time food recognition and macro breakdown.",
+        "s2": "Dashboard: Comprehensive health metrics and body tracking.",
+        "s3": "Neangi Chat: Personal diet coaching conversation.",
+        "s4": "Social Feed: Sharing healthy meals with the community.",
+        "s5": "Gamification: Badges, levels, and daily achievements.",
+        "s6": "Meal Planner: AI-suggested weekly menus."
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "App Router",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "Gemini Vision",
+          "desc": "Food Recognition",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "NestJS",
+          "desc": "CQRS Backend",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s4": {
+          "name": "PostgreSQL",
+          "desc": "Structured Data",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "Firebase",
+          "desc": "Push & Auth",
+          "cat": "DevOps",
+          "icon": "Firebase"
+        },
+        "s6": {
+          "name": "Recharts",
+          "desc": "Health Analytics",
+          "cat": "Frontend",
+          "icon": "Layout"
+        }
+      }
+    },
+    "lenomand": {
+      "title": "Lenormand AI Oracle",
+      "description": "A spiritual spiritual companion blending 19th-century cartomancy with modern AI personas to provide actionable life guidance.",
+      "tags": [
+        "Spiritual Tech",
+        "AI Agents",
+        "Tarot"
+      ],
+      "impact": "Preserves the nuanced art of tarot reading by combining traditional cartomancy logic with the empathetic reasoning of modern AI.",
+      "categories": [
+        "Spiritual Tech",
+        "GenAI",
+        "Cultural Heritage",
+        "Entertainment"
+      ],
+      "longDescription": "Lenormand AI redefines digital fortune-telling. Unlike random generators, it uses sophisticated AI agents (Reader Personalities) like 'Madame Iris' or 'GenZ Chu Pi' to interpret card pairs (Pairing) in the context of the user's specific life questions.",
+      "features": {
+        "personalities": {
+          "title": "Reader Personas",
+          "desc": "Choose your reader: From the strict 'Madame Iris' to the empathetic 'Ms. Linh'."
+        },
+        "pairing": {
+          "title": "Logic Pairing",
+          "desc": "AI interprets the unique interaction between Subject and Modifier cards."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> USER: 'Will I get the job?' | Context: Career",
+          "step2": ">> DRAW: [Fox] + [Letter] + [Sun]",
+          "step3": ">> PAIRING: Fox (Work) + Letter (News) = Job Offer",
+          "step4": ">> READER: Madame Iris analyzing combination...",
+          "step5": ">> OUTPUT: 'Success comes, but watch for fine print.'"
+        },
+        "scanner": {
+          "analyzing": "Reading destiny...",
+          "grade": "Outlook: POSITIVE",
+          "comment": "The Sun card illuminates the Letter. Good news is imminent."
+        }
+      },
+      "screenshots": {
+        "s1": "Oracle Table: Smooth card shuffling and selection UI.",
+        "s2": "Reader Selection: Choosing between unique AI personalities.",
+        "s3": "Spread View: Grand Tableau or 3-card spread layouts.",
+        "s4": "Deep Interpretation: Detailed breakdown of card meanings.",
+        "s5": "Chat Follow-up: Asking clarifying questions to the AI.",
+        "s6": "Daily Draw: One card guidance for the day."
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "Interactive UI",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "GPT-4o",
+          "desc": "Persona Engine",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "Zustand",
+          "desc": "State Management",
+          "cat": "Frontend",
+          "icon": "Code2"
+        },
+        "s4": {
+          "name": "Framer Motion",
+          "desc": "Card Animations",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s5": {
+          "name": "Tailwind",
+          "desc": "Glassmorphism",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s6": {
+          "name": "Supabase",
+          "desc": "Reading History",
+          "cat": "Backend",
+          "icon": "Database"
+        }
+      }
+    },
+    "edtech": {
+      "title": "AI Gradix Assistant",
+      "description": "Comprehensive teaching platform that automates grading and lesson planning, freeing up 90% of teachers' administrative time.",
+      "tags": [
+        "EdTech",
+        "Automated Grading",
+        "SaaS"
+      ],
+      "impact": "Liberates educators from the repetitive burden of grading, allowing them to redirect their energy toward mentorship and personalized student support.",
+      "categories": [
+        "EdTech",
+        "B2B SaaS",
+        "Automation",
+        "Analytics"
+      ],
+      "longDescription": "AI Gradix is the ultimate Teaching Assistant. It combines OCR and Generative AI to grade both multiple-choice and essay questions with human-like reasoning. Beyond grading, it assists in 5512-compliant lesson planning and student performance tracking.",
+      "features": {
+        "grading": {
+          "title": "Smart Grading",
+          "desc": "Hybrid logic (OCR + AI) to grade exams with near 100% accuracy."
+        },
+        "assistant": {
+          "title": "Lesson Architect",
+          "desc": "Generates 5512-standard lesson plans and slides from simple topics."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> INCOMING: Batch_Exam_Class_9A.pdf (30 files)",
+          "step2": ">> OCR: Extracting student handwriting...",
+          "step3": ">> MATCH: Comparing vs Answer Key (MCQ)",
+          "step4": ">> EVAL: Grading Essay with Rubric (Creativity: 8/10)",
+          "step5": ">> SYNC: Scorebook updated. Notify Parents."
+        },
+        "scanner": {
+          "analyzing": "Grading papers...",
+          "grade": "Efficiency: 30x Faster",
+          "comment": "30 papers graded in 45 seconds. Mean score: 7.8"
+        }
+      },
+      "screenshots": {
+        "s1": "Smart Gradebook: Overview of class performance.",
+        "s2": "Split-Screen: Side-by-side AI grading review.",
+        "s3": "Lesson Planner: AI generating curriculum content.",
+        "s4": "Matrix Builder: Designing balanced exam questions.",
+        "s5": "Student Analytics: Detailed strength/weakness chart.",
+        "s6": "Parent Connect: Automated progress reports."
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "Dashboard UI",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "Gemini 1.5",
+          "desc": "Long Context OCR",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "NestJS",
+          "desc": "Core Logic",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s4": {
+          "name": "BullMQ",
+          "desc": "Batch Processing",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "AWS S3",
+          "desc": "Exam Storage",
+          "cat": "DevOps",
+          "icon": "Cloud"
+        },
+        "s6": {
+          "name": "PostgreSQL",
+          "desc": "Student Data",
+          "cat": "Backend",
+          "icon": "Database"
         }
       }
     }

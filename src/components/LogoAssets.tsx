@@ -153,4 +153,14 @@ export const LogoAssets = {
       />
     </svg>
   ),
+  Firebase: (props: React.SVGProps<SVGSVGElement>) => (
+    <svg viewBox="0 0 24 24" fill="none" {...props}>
+      <path d="M4.5 16.5L1.5 19.5L5.5 4.5L9.5 12.5L4.5 16.5Z" fill="#FCCA3F" />
+      <path d="M9.5 12.5L12 17.5L20.5 4.5L9.5 12.5Z" fill="#FFA000" />
+      <path
+        d="M4.5 16.5L12 23L19.5 16.5L12 17.5L9.5 12.5L4.5 16.5Z"
+        fill="#F57F17"
+      />
+    </svg>
+  ),
 };

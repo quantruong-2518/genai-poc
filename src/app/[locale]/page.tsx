@@ -10,73 +10,37 @@ export default function Home({
   const t = useTranslations('Dashboard');
   const tProjects = useTranslations('Projects');
 
-  // Dynamically constructed project list from translations
-  // In a real app, you might map over keys, but here we explicitly list them to match the structure
-  const projects = [
-    {
-      id: 'jobpang',
-      title: tProjects('jobpang.title'),
-      description: tProjects('jobpang.description'),
-      impact: tProjects('jobpang.impact'),
-      // Note: next-intl hook returns strings or enriched text, arrays need specific handling or just use keys.
-      // For simplicity in this demo environment, I'm hardcoding English keys mapped,
-      // BUT to do it right with i18n we should fetch them.
-      // tProjects.raw('jobpang.categories') would be ideal if supported,
-      // but let's stick to simple props for now or use the translated array manually if we had it.
-      // Actually, let's use the translation keys if possible or just English defaults for visual proof.
-      // I will trust the translation file has them and I'll use a helper or just keys.
-      // Let's use the values from translation by assuming the keys exist and just mapping them is hard without returnObjects.
-      // I will compromise and pass the keys to be translated INSIDE the card? No, Card is client.
-      // I will rely on the fact that I just added them.
-      // I'll grab them via tProjects.raw() if available or just hardcode the display for now
-      // to ensure UI looks good, as `useTranslations` doesn't easily return arrays without `returnObjects`.
-      // Wait, `useTranslations` DOES NO return objects by default unless configured.
-      // To be safe and quick, I will just pass the translated string array using a simple hack or static data found in the `en.json`.
-      // Actually, I'll just map the keys since I know them:
-      categories: [
-        tProjects('jobpang.categories.0'),
-        tProjects('jobpang.categories.1'),
-        tProjects('jobpang.categories.2'),
-        tProjects('jobpang.categories.3'),
-      ],
-    },
-    {
-      id: 'monthler',
-      title: tProjects('monthler.title'),
-      description: tProjects('monthler.description'),
-      impact: tProjects('monthler.impact'),
-      categories: [
-        tProjects('monthler.categories.0'),
-        tProjects('monthler.categories.1'),
-        tProjects('monthler.categories.2'),
-        tProjects('monthler.categories.3'),
-      ],
-    },
-    {
-      id: 'genai-poc',
-      title: tProjects('genai-poc.title'),
-      description: tProjects('genai-poc.description'),
-      impact: tProjects('genai-poc.impact'),
-      categories: [
-        tProjects('genai-poc.categories.0'),
-        tProjects('genai-poc.categories.1'),
-        tProjects('genai-poc.categories.2'),
-        tProjects('genai-poc.categories.3'),
-      ],
-    },
+  // List of projects to display
+  const projectKeys = [
+    'jobpang',
+    'monthler',
+    'genai-poc',
+    'eat-what',
+    'lenomand',
+    'edtech',
   ];
 
-  return (
-    <div className="min-h-screen bg-[#050000] relative overflow-hidden">
-      {/* Dynamic Red Background Engine */}
-      <div className="absolute top-0 left-0 w-full h-[800px] bg-linear-to-b from-[#450a0a] via-[#1a0505] to-transparent pointer-events-none opacity-60" />
+  const projects = projectKeys.map(key => ({
+    id: key,
+    title: tProjects(`${key}.title`),
+    description: tProjects(`${key}.description`),
+    impact: tProjects(`${key}.impact`),
+    categories: [
+      tProjects(`${key}.categories.0`),
+      tProjects(`${key}.categories.1`),
+      tProjects(`${key}.categories.2`),
+      tProjects(`${key}.categories.3`),
+    ],
+  }));
 
-      {/* Geometric Accents */}
-      <div
-        className="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-red-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse"
-        style={{ animationDuration: '4s' }}
-      />
-      <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none" />
+  return (
+    <div className="min-h-screen bg-[#0a0000] text-red-100 font-sans selection:bg-red-500/30">
+      {/* Dynamic Background Engine */}
+      <div className="fixed inset-0 pointer-events-none">
+        <div className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-red-900/20 blur-[120px] rounded-full opacity-40 mix-blend-screen" />
+        <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-indigo-900/10 blur-[100px] rounded-full opacity-30 mix-blend-screen" />
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03]" />
+      </div>
 
       <main className="container mx-auto px-6 py-24 relative z-10">
         <div className="max-w-4xl mx-auto mb-20 text-center">

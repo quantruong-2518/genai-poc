@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, TrendingUp, Layers } from 'lucide-react';
 import Link from 'next/link';
+import { COVER_IMAGES } from '@/lib/constants';
 
 interface ProjectCardProps {
   id: string;
@@ -23,97 +24,105 @@ export function ProjectCard({
   gradient = 'from-blue-500/20 to-purple-500/20',
   locale = 'en',
 }: ProjectCardProps) {
+  // Use mapped image or fallback to a subtle dark pattern
+  const coverImage = COVER_IMAGES[id];
+
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      whileHover={{ y: -5 }}
-      transition={{ duration: 0.3 }}
-      className="group relative p-1 rounded-3xl bg-linear-to-br from-white/10 to-white/5 hover:from-red-500/20 hover:to-orange-500/20 transition-all duration-300 h-full flex flex-col"
+      initial={{ opacity: 0, scale: 0.98 }}
+      animate={{ opacity: 1, scale: 1 }}
+      whileHover={{ scale: 1.01, y: -2 }}
+      transition={{ type: 'spring', stiffness: 200, damping: 25 }}
+      className="group relative h-full flex flex-col"
     >
-      <div
-        className="absolute inset-0 bg-linear-to-br opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl blur-xl"
-        style={{
-          background: `linear-gradient(to bottom right, var(--accent-glow), transparent)`,
-        }}
-      />
+      {/* PROFESSIONAL FRAME: Clean, solid connection */}
+      <div className="relative h-full flex flex-col bg-[#080808] border border-zinc-800 transition-colors duration-300 group-hover:border-zinc-600 rounded-sm overflow-hidden shadow-sm">
+        {/* DOMAIN HEADER BACKGROUND */}
+        <div className="h-32 w-full relative overflow-hidden bg-zinc-900 border-b border-zinc-800/50">
+          {/* Unsplash Cover Image */}
+          {coverImage ? (
+            <>
+              <div
+                className="absolute inset-0 bg-cover bg-center opacity-40 group-hover:opacity-60 transition-all duration-700 grayscale group-hover:grayscale-0 transform group-hover:scale-110"
+                style={{ backgroundImage: `url(${coverImage})` }}
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-[#080808] to-transparent opacity-90" />
+            </>
+          ) : (
+            <div
+              className={`absolute inset-0 bg-linear-to-br ${gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}
+            />
+          )}
 
-      <div className="relative h-full flex flex-col justify-between p-7 bg-[#0a0000]/90 backdrop-blur-xl rounded-[1.3rem] border border-white/10 hover:border-red-500/30 transition-colors duration-300 overflow-hidden">
-        {/* Glow Effect */}
-        <div
-          className={`absolute -right-20 -top-20 w-60 h-60 bg-linear-to-br ${gradient} blur-3xl rounded-full opacity-10 group-hover:opacity-30 transition-opacity duration-500 pointer-events-none`}
-        />
+          {/* Abstract "Domain Graph" pattern overlay */}
+          <div
+            className="absolute inset-0 opacity-10 pointer-events-none"
+            style={{
+              backgroundImage:
+                'radial-gradient(circle at 1px 1px, white 1px, transparent 0)',
+              backgroundSize: '16px 16px',
+            }}
+          />
 
-        <div>
-          {/* Header Badge */}
-          <div className="flex items-center justify-between mb-6">
-            <div className="p-2.5 bg-white/5 rounded-xl border border-white/10 backdrop-blur-sm group-hover:bg-red-500/10 group-hover:border-red-500/30 transition-all">
-              <Sparkles className="w-5 h-5 text-zinc-400 group-hover:text-red-400 transition-colors duration-300" />
+          <div className="absolute top-4 left-4 z-10">
+            <div className="font-mono text-[10px] text-zinc-400 uppercase tracking-widest border border-zinc-700/50 px-2 py-1 rounded-sm bg-black/50 backdrop-blur-md">
+              {id.replace('-', ' ')}
             </div>
-            {categories.length > 0 && (
-              <div className="flex gap-2">
-                {categories.slice(0, 1).map(cat => (
-                  <span
-                    key={cat}
-                    className="text-xs font-bold tracking-wider px-3 py-1 bg-white/5 rounded-full text-zinc-400 border border-white/5 uppercase"
-                  >
-                    {cat}
-                  </span>
-                ))}
-                {categories.length > 1 && (
-                  <span className="text-xs font-bold tracking-wider px-2 py-1 bg-white/5 rounded-full text-zinc-500 border border-white/5">
-                    +{categories.length - 1}
-                  </span>
-                )}
-              </div>
-            )}
           </div>
-
-          <h3 className="text-2xl font-black text-white mb-3 group-hover:text-red-400 transition-colors duration-300 tracking-tight">
-            {title}
-          </h3>
-
-          <p className="text-sm text-zinc-400 leading-relaxed line-clamp-2 mb-6 group-hover:text-zinc-300 transition-colors border-l-2 border-white/10 pl-4">
-            {description}
-          </p>
-
-          {/* Business Impact Section */}
-          {impact && (
-            <div className="mb-6 p-4 rounded-xl bg-linear-to-r from-red-950/30 to-transparent border border-red-900/20">
-              <div className="flex items-center gap-2 mb-2 text-red-400 text-xs font-bold uppercase tracking-widest">
-                <TrendingUp className="w-3 h-3" />
-                Business Impact
-              </div>
-              <p className="text-xs text-red-100/70 font-mono leading-relaxed">
-                {impact}
-              </p>
-            </div>
-          )}
-
-          {/* Categories / Tags list */}
-          {categories.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-6">
-              {categories.slice(0, 4).map(cat => (
-                <span
-                  key={cat}
-                  className="text-[10px] uppercase font-bold text-zinc-500 bg-white/5 px-2 py-1 rounded border border-white/5 hover:border-red-500/30 hover:text-red-400 transition-colors"
-                >
-                  {cat}
-                </span>
-              ))}
-            </div>
-          )}
         </div>
 
-        <Link
-          href={`/${locale}/projects/${id}`}
-          className="flex items-center justify-between w-full p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-red-600 hover:border-red-500 hover:text-white transition-all group/btn mt-auto"
-        >
-          <span className="text-sm font-bold tracking-wide">
-            Explore Case Study
-          </span>
-          <ArrowRight className="w-4 h-4 transform group-hover/btn:translate-x-1 transition-transform" />
-        </Link>
+        <div className="p-6 flex flex-col grow">
+          {/* CONTENT: Professional Typography */}
+          <div className="mb-4">
+            <h3 className="text-xl font-bold text-zinc-100 mb-2 leading-tight group-hover:text-white transition-colors">
+              {title}
+            </h3>
+
+            <p className="text-sm font-normal text-zinc-400 leading-relaxed line-clamp-3 group-hover:text-zinc-300 transition-colors">
+              {description}
+            </p>
+          </div>
+
+          {/* TAGS: Flat Pills (Professional Specs) */}
+          <div className="flex flex-wrap gap-1.5 mb-6 mt-auto">
+            {categories.slice(0, 3).map(cat => (
+              <span
+                key={cat}
+                className="px-2.5 py-1 text-[10px] font-medium uppercase tracking-wide bg-zinc-900 text-zinc-400 rounded-sm border border-zinc-800 group-hover:border-zinc-600 group-hover:text-zinc-300 transition-colors"
+              >
+                {cat}
+              </span>
+            ))}
+          </div>
+
+          {/* IMPACT: Minimal Indicator */}
+          {impact && (
+            <div className="mb-6 pt-4 border-t border-zinc-800/50">
+              <div className="flex items-start gap-2">
+                <TrendingUp className="w-3.5 h-3.5 text-emerald-500/80 mt-0.5 shrink-0" />
+                <p className="text-xs text-zinc-400 italic">"{impact}"</p>
+              </div>
+            </div>
+          )}
+
+          {/* ACTION: Modern Magnetic Button */}
+          <Link
+            href={`/${locale}/projects/${id}`}
+            className="mt-2 block group/btn"
+          >
+            <div className="relative overflow-hidden bg-zinc-900 border border-zinc-800 rounded-md px-4 py-3 flex items-center justify-between transition-all duration-300 hover:border-zinc-600 hover:bg-zinc-800">
+              <span className="relative z-10 text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+                View Case Study
+              </span>
+              <div className="relative z-10 flex items-center justify-center w-6 h-6 bg-white rounded-full transform group-hover/btn:scale-110 transition-transform duration-300">
+                <ArrowRight className="w-3 h-3 text-black -rotate-45 group-hover/btn:rotate-0 transition-transform duration-300" />
+              </div>
+
+              {/* Shine Effect */}
+              <div className="absolute inset-0 -translate-x-full group-hover/btn:translate-x-full transition-transform duration-700 bg-linear-to-r from-transparent via-white/5 to-transparent skew-x-12" />
+            </div>
+          </Link>
+        </div>
       </div>
     </motion.div>
   );

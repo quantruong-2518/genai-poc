@@ -5,8 +5,8 @@
   },
   "Dashboard": {
     "badge": "Hệ Sinh Thái GenAI Nội Bộ",
-    "title": "Lò Luyện AI (The Foundry)",
-    "subtitle": "Trung tâm ươm mầm, điều phối và triển khai các dịch vụ Generative AI thế hệ mới.",
+    "title": "The AI Foundry",
+    "subtitle": "Xưởng kiến tạo các giải pháp GenAI thực chiến – Nơi công nghệ chuyển mình thành giá trị thực.",
     "footer": "Hệ thống hoạt động bình thường",
     "explore": "Khám phá Dự án"
   },
@@ -19,7 +19,7 @@
         "GPT-4o",
         "Điều phối"
       ],
-      "impact": "Giảm 60% chi phí tuyển dụng thông qua việc tự động hóa sàng lọc ứng viên và hướng nghiệp tất định.",
+      "impact": "Hợp lý hóa quy trình tuyển dụng bằng phân tích ứng viên khách quan và tức thì, giúp giảm thiểu sự mệt mỏi khi sàng lọc thủ công và mang lại kết quả chất lượng cao hơn.",
       "categories": [
         "Điều phối AI",
         "Agent tự hành",
@@ -38,17 +38,37 @@
         }
       },
       "demo": {
-        "terminal": {
-          "step1": ">> NHẬN FILE: CV_NguyenVanA.pdf (backend-dev)",
-          "step2": ">> MODULE: ResumeDiagnosis | Chiến thuật: PHÂN_TÍCH_SÂU",
-          "step3": ">> TÍNH ĐIỂM: Kinh nghiệm (trọng số: 0.4) | Kỹ năng (0.3)",
-          "step4": ">> PHÁT HIỆN: Thiếu chỉ số định lượng (KPIs) trong dự án cũ",
-          "step5": ">> KẾT QUẢ: Trả về JSON Góp ý chi tiết + Lộ trình cải thiện"
-        },
         "scanner": {
-          "analyzing": "Đang thẩm định tư duy sự nghiệp...",
-          "grade": "Điểm Impact: 72/100",
-          "comment": "Chuyên môn tốt, nhưng chưa chứng minh được ROI cho doanh nghiệp. Khuyên dùng phương pháp STAR cho 'Dự án X'."
+          "analyzing": "Đang phân tích cấu trúc CV...",
+          "grade": "Điểm: 72/100",
+          "comment": "Chiều sâu kỹ thuật tốt, nhưng chưa thể hiện được ROI cho doanh nghiệp. Đề xuất viết lại 'Dự án X' theo phương pháp STAR."
+        },
+        "terminal": {
+          "step1": "> Khởi tạo hệ thống JobPang...",
+          "step2": "> Đang tải các AI Agent (Reviewer, Writer, Strategist)...",
+          "step3": "> Phân tích hồ sơ ứng viên vs JD...",
+          "step4": "> Tạo báo cáo phân tích khoảng cách...",
+          "step5": "> Tối ưu hóa hoàn tất. Sẵn sàng ứng tuyển."
+        }
+      },
+      "roadmap": {
+        "title": "Lộ Trình Phát Triển",
+        "steps": {
+          "s1": {
+            "phase": "Giai đoạn 1: Nền tảng",
+            "title": "Cốt lõi AI Resume",
+            "desc": "Hoàn thiện thuật toán phân tích và chấm điểm CV sử dụng GPT-4o."
+          },
+          "s2": {
+            "phase": "Giai đoạn 2: Mở rộng",
+            "title": "Interview Coach Agent",
+            "desc": "Phân tích giọng nói thời gian thực và phỏng vấn thử với Avatar kỹ thuật số."
+          },
+          "s3": {
+            "phase": "Giai đoạn 3: Hệ sinh thái",
+            "title": "Dự báo thị trường việc làm",
+            "desc": "Phân tích xu hướng kinh tế vĩ mô để đề xuất chuyển đổi nghề nghiệp đón đầu xu thế."
+          }
         }
       },
       "screenshots": {
@@ -106,7 +126,7 @@
         "Gợi ý thông minh",
         "Du lịch địa phương"
       ],
-      "impact": "Tăng 35% tỷ lệ đặt tour địa phương nhờ cá nhân hóa lịch trình qua hội thoại AI.",
+      "impact": "Biến sự hỗn loạn của việc lên kế hoạch du lịch thành trải nghiệm mượt mà, xử lý mọi hậu cần phức tạp để du khách chỉ cần tận hưởng hành trình.",
       "categories": [
         "Travel Tech",
         "AI Agent",
@@ -185,7 +205,7 @@
         "Đa phương thức",
         "SaaS"
       ],
-      "impact": "Tăng tốc độ đưa ứng dụng AI đa phương thức ra thị trường nhờ bản thiết kế chuẩn Production.",
+      "impact": "Loại bỏ sự phức tạp khi xây dựng hạ tầng đa phương thức từ con số 0, cung cấp bản thiết kế đã được kiểm chứng để phát triển sản phẩm AI nhanh chóng.",
       "categories": [
         "Đa phương thức",
         "SaaS Blueprint",
@@ -260,6 +280,267 @@
           "desc": "Mô hình tạo ảnh",
           "cat": "AI",
           "icon": "Cloud"
+        }
+      }
+    },
+    "eat-what": {
+      "title": "WhatEat - Trợ Lý Dinh Dưỡng",
+      "description": "Ứng dụng theo dõi dinh dưỡng thông minh sử dụng AI Vision để nhận diện món ăn, tính calo và gamification hóa thói quen ăn uống.",
+      "tags": [
+        "Health Tech",
+        "AI Vision",
+        "Gamification"
+      ],
+      "impact": "Đơn giản hóa dinh dưỡng bằng cách biến dữ liệu thực phẩm phức tạp thành thông tin dễ hiểu, thúc đẩy thói quen lành mạnh qua nhận thức thay vì kiêng khem khắt khe.",
+      "categories": [
+        "AI Vision",
+        "Health Tech",
+        "Gamification",
+        "Mobile First"
+      ],
+      "longDescription": "WhatEat không chỉ là công cụ tính calo; đây là một Chuyên gia Dinh dưỡng AI chủ động. Sử dụng thị giác máy tính (Gemini/GPT-4V), ứng dụng phân tích ảnh chụp món ăn tức thì. Hệ thống giữ chân người dùng thông qua Gamification với nhiệm vụ hàng ngày, chuỗi thành tích và bảng xếp hạng.",
+      "features": {
+        "ai_nutrition": {
+          "title": "AI Quét Món Ăn",
+          "desc": "Nhận diện tức thì món ăn và ước lượng khẩu phần bằng AI đa phương thức."
+        },
+        "gamification": {
+          "title": "Xây Dựng Thói Quen",
+          "desc": "Hệ thống thăng cấp RPG với Nhiệm vụ hàng ngày, Streaks và Bảng xếp hạng."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> UPLOAD: 'pho_bo.jpg' (3.5MB)",
+          "step2": ">> VISION: Phát hiện... 'Phở Bò' (Độ tin cậy: 98%)",
+          "step3": ">> ANALYSIS: Bò (150g), Bánh phở (200g), Nước dùng (300ml)",
+          "step4": ">> CALC: Tổng ~550 kcal | Protein: 25g",
+          "step5": ">> GAMIFY: Nhiệm vụ 'Protein Power': +25g"
+        },
+        "scanner": {
+          "analyzing": "Phân tích dinh dưỡng...",
+          "grade": "Điểm Sức Khỏe: 8.5/10",
+          "comment": "Cân bằng đạm tốt. Natri hơi cao. Gợi ý uống thêm nước."
+        }
+      },
+      "screenshots": {
+        "s1": "AI Camera: Nhận diện món ăn và phân tích macro thời gian thực.",
+        "s2": "Dashboard: Chỉ số sức khỏe toàn diện và theo dõi cơ thể.",
+        "s3": "Neangi Chat: Trò chuyện tư vấn chế độ ăn cá nhân hóa.",
+        "s4": "Social Feed: Chia sẻ bữa ăn lành mạnh cùng cộng đồng.",
+        "s5": "Gamification: Huy hiệu, cấp độ và thành tựu hàng ngày.",
+        "s6": "Meal Planner: Thực đơn tuần do AI đề xuất."
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "App Router",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "Gemini Vision",
+          "desc": "Nhận diện Món ăn",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "NestJS",
+          "desc": "Backend CQRS",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s4": {
+          "name": "PostgreSQL",
+          "desc": "Dữ liệu Cấu trúc",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "Firebase",
+          "desc": "Push & Auth",
+          "cat": "DevOps",
+          "icon": "Firebase"
+        },
+        "s6": {
+          "name": "Recharts",
+          "desc": "Phân tích Sức khỏe",
+          "cat": "Frontend",
+          "icon": "Layout"
+        }
+      }
+    },
+    "lenomand": {
+      "title": "Lenormand AI Oracle",
+      "description": "Người bạn tâm linh kết hợp nghệ thuật bói bài thế kỷ 19 với các nhân cách AI hiện đại để đưa ra lời khuyên thực tế.",
+      "tags": [
+        "Spiritual Tech",
+        "AI Agents",
+        "Tarot"
+      ],
+      "impact": "Gìn giữ nghệ thuật giải bài tinh tế bằng cách kết hợp logic bói toán truyền thống với tư duy thấu cảm của AI hiện đại.",
+      "categories": [
+        "Spiritual Tech",
+        "GenAI",
+        "Văn hóa",
+        "Giải trí"
+      ],
+      "longDescription": "Lenormand AI tái định nghĩa bói bài kỹ thuật số. Không giống như các trình tạo ngẫu nhiên, nó sử dụng các tác nhân AI tinh vi (Reader Personalities) như 'Madame Iris' nghiêm khắc hay 'Chu Pi' GenZ để giải thích các cặp bài trong ngữ cảnh cụ thể của người dùng.",
+      "features": {
+        "personalities": {
+          "title": "Nhân Cách Reader",
+          "desc": "Chọn người đọc bài: Từ 'Madame Iris' nghiêm nghị đến 'Cô Linh' chữa lành."
+        },
+        "pairing": {
+          "title": "Logic Ghép Bài",
+          "desc": "AI giải thích sự tương tác độc đáo giữa lá Chủ thể và lá Bổ ngữ."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> USER: 'Tôi có nhận được job này?' | Context: Sự nghiệp",
+          "step2": ">> DRAW: [Cáo] + [Thư] + [Mặt Trời]",
+          "step3": ">> PAIRING: Cáo (Công việc) + Thư (Tin tức) = Offer",
+          "step4": ">> READER: Madame Iris đang phân tích tổ hợp...",
+          "step5": ">> OUTPUT: 'Thành công tới, nhưng hãy kỹ tính trong hợp đồng.'"
+        },
+        "scanner": {
+          "analyzing": "Đọc vận mệnh...",
+          "grade": "Triển vọng: TÍCH CỰC",
+          "comment": "Lá Mặt Trời soi sáng lá Thư. Tin tốt đang đến gần."
+        }
+      },
+      "screenshots": {
+        "s1": "Bàn Oracle: Giao diện tráo và chọn bài mượt mà.",
+        "s2": "Chọn Reader: Lựa chọn giữa các nhân cách AI độc đáo.",
+        "s3": "Giao diện Trải bài: Grand Tableau hoặc trải 3 lá.",
+        "s4": "Giải nghĩa Sâu: Phân tích chi tiết ý nghĩa lá bài.",
+        "s5": "Chat Follow-up: Đặt câu hỏi làm rõ với AI.",
+        "s6": "Lá bài Ngày: Lời khuyên dẫn lối cho ngày mới."
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "Giao diện Tương tác",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "GPT-4o",
+          "desc": "Engine Nhân cách",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "Zustand",
+          "desc": "Quản lý State",
+          "cat": "Frontend",
+          "icon": "Code2"
+        },
+        "s4": {
+          "name": "Framer Motion",
+          "desc": "Hoạt họa Lá bài",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s5": {
+          "name": "Tailwind",
+          "desc": "Glassmorphism",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s6": {
+          "name": "Supabase",
+          "desc": "Lịch sử Trải bài",
+          "cat": "Backend",
+          "icon": "Database"
+        }
+      }
+    },
+    "edtech": {
+      "title": "Trợ Lý AI Gradix",
+      "description": "Nền tảng trợ giảng toàn diện tự động hóa chấm điểm và soạn giáo án, giải phóng 90% thời gian hành chính cho giáo viên.",
+      "tags": [
+        "EdTech",
+        "Chấm điểm Tự động",
+        "SaaS"
+      ],
+      "impact": "Giải phóng giáo viên khỏi gánh nặng chấm điểm lặp đi lặp lại, cho phép họ dành năng lượng cho việc hướng dẫn và hỗ trợ học sinh cá nhân hóa.",
+      "categories": [
+        "EdTech",
+        "B2B SaaS",
+        "Tự động hóa",
+        "Phân tích"
+      ],
+      "longDescription": "AI Gradix là Trợ lý Giảng dạy tối thượng. Nó kết hợp OCR và AI Tạo sinh để chấm cả câu hỏi trắc nghiệm và tự luận với tư duy như con người. Ngoài chấm điểm, nó còn hỗ trợ soạn giáo án chuẩn 5512 và theo dõi năng lực học sinh.",
+      "features": {
+        "grading": {
+          "title": "Chấm Điểm Thông Minh",
+          "desc": "Logic lai (OCR + AI) chấm bài thi với độ chính xác gần như 100%."
+        },
+        "assistant": {
+          "title": "Kiến Trúc Sư Bài Giảng",
+          "desc": "Tạo giáo án và slide chuẩn 5512 chỉ từ chủ đề đơn giản."
+        }
+      },
+      "demo": {
+        "terminal": {
+          "step1": ">> INCOMING: Batch_KiemTra_Lop9A.pdf (30 files)",
+          "step2": ">> OCR: Trích xuất chữ viết tay học sinh...",
+          "step3": ">> MATCH: Đối chiếu vs Đáp án (Trắc nghiệm)",
+          "step4": ">> EVAL: Chấm Tự luận theo Rubric (Sáng tạo: 8/10)",
+          "step5": ">> SYNC: Đã vào sổ điểm. Gửi thông báo Phụ huynh."
+        },
+        "scanner": {
+          "analyzing": "Đang chấm bài...",
+          "grade": "Hiệu suất: Nhanh gấp 30x",
+          "comment": "30 bài chấm trong 45 giây. Điểm trung bình: 7.8"
+        }
+      },
+      "screenshots": {
+        "s1": "Sổ Điểm Thông Minh: Tổng quan hiệu suất lớp học.",
+        "s2": "Màn hình Kép: Đối chiếu chấm điểm AI bên cạnh bài làm.",
+        "s3": "Soạn Bài Giảng: AI tạo nội dung giáo trình.",
+        "s4": "Xây Dựng Ma Trận: Thiết kế câu hỏi thi cân bằng.",
+        "s5": "Phân Tích Học Sinh: Biểu đồ điểm mạnh/yếu chi tiết.",
+        "s6": "Kết Nối Phụ Huynh: Báo cáo tiến độ tự động."
+      },
+      "stack": {
+        "s1": {
+          "name": "Next.js",
+          "desc": "Dashboard UI",
+          "cat": "Frontend",
+          "icon": "Layout"
+        },
+        "s2": {
+          "name": "Gemini 1.5",
+          "desc": "OCR Ngữ cảnh Dài",
+          "cat": "AI",
+          "icon": "Cloud"
+        },
+        "s3": {
+          "name": "NestJS",
+          "desc": "Core Logic",
+          "cat": "Backend",
+          "icon": "Server"
+        },
+        "s4": {
+          "name": "BullMQ",
+          "desc": "Xử lý Batch",
+          "cat": "Backend",
+          "icon": "Database"
+        },
+        "s5": {
+          "name": "AWS S3",
+          "desc": "Lưu trữ Đề thi",
+          "cat": "DevOps",
+          "icon": "Cloud"
+        },
+        "s6": {
+          "name": "PostgreSQL",
+          "desc": "Dữ liệu Học sinh",
+          "cat": "Backend",
+          "icon": "Database"
         }
       }
     }
