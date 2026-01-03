@@ -32,6 +32,15 @@ export function ProjectCard({
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{ scale: 1.01, y: -2 }}
+      whileInView={{
+        scale: [1, 1.02, 1],
+        borderColor: [
+          'rgba(39, 39, 42, 1)',
+          'rgba(239, 68, 68, 0.5)',
+          'rgba(39, 39, 42, 1)',
+        ],
+      }}
+      viewport={{ once: false, amount: 0.5 }}
       transition={{ type: 'spring', stiffness: 200, damping: 25 }}
       className="group relative h-full flex flex-col"
     >
@@ -71,14 +80,14 @@ export function ProjectCard({
           </div>
         </div>
 
-        <div className="p-6 flex flex-col grow">
+        <div className="p-4 md:p-6 flex flex-col grow">
           {/* CONTENT: Professional Typography */}
           <div className="mb-4">
-            <h3 className="text-xl font-bold text-zinc-100 mb-2 leading-tight group-hover:text-white transition-colors">
+            <h3 className="text-lg md:text-xl font-bold text-zinc-100 mb-2 leading-tight group-hover:text-white transition-colors">
               {title}
             </h3>
 
-            <p className="text-sm font-normal text-zinc-400 leading-relaxed line-clamp-3 group-hover:text-zinc-300 transition-colors">
+            <p className="text-xs md:text-sm font-normal text-zinc-400 leading-relaxed line-clamp-3 group-hover:text-zinc-300 transition-colors">
               {description}
             </p>
           </div>
@@ -110,12 +119,12 @@ export function ProjectCard({
             href={`/${locale}/projects/${id}`}
             className="mt-2 block group/btn"
           >
-            <div className="relative overflow-hidden bg-zinc-900 border border-zinc-800 rounded-md px-4 py-3 flex items-center justify-between transition-all duration-300 hover:border-zinc-600 hover:bg-zinc-800">
-              <span className="relative z-10 text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
+            <div className="relative overflow-hidden bg-zinc-900 border border-zinc-800 rounded-md px-3 py-2 md:px-4 md:py-3 flex items-center justify-between transition-all duration-300 hover:border-zinc-600 hover:bg-zinc-800">
+              <span className="relative z-10 text-[10px] md:text-xs font-bold text-white uppercase tracking-widest flex items-center gap-2">
                 View Case Study
               </span>
-              <div className="relative z-10 flex items-center justify-center w-6 h-6 bg-white rounded-full transform group-hover/btn:scale-110 transition-transform duration-300">
-                <ArrowRight className="w-3 h-3 text-black -rotate-45 group-hover/btn:rotate-0 transition-transform duration-300" />
+              <div className="relative z-10 flex items-center justify-center w-5 h-5 md:w-6 md:h-6 bg-white rounded-full transform group-hover/btn:scale-110 transition-transform duration-300">
+                <ArrowRight className="w-2.5 h-2.5 md:w-3 md:h-3 text-black -rotate-45 group-hover/btn:rotate-0 transition-transform duration-300" />
               </div>
 
               {/* Shine Effect */}

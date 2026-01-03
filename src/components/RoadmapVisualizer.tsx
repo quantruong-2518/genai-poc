@@ -55,7 +55,7 @@ export function RoadmapVisualizer({ steps }: RoadmapVisualizerProps) {
                     {step.phase}
                   </div>
 
-                  <h3 className="text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-red-100 transition-colors">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-3 group-hover:text-red-100 transition-colors">
                     {step.title}
                   </h3>
 

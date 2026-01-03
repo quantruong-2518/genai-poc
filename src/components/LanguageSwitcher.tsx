@@ -37,12 +37,12 @@ export default function LanguageSwitcher() {
   }, [locale]);
 
   return (
-    <div className="flex gap-2 text-xs font-medium text-zinc-500 bg-white/5 p-1 rounded-full border border-white/5 backdrop-blur-sm">
+    <div className="flex gap-1 md:gap-2 text-[10px] md:text-xs font-medium text-zinc-500 bg-black/60 p-1 rounded-full border border-white/10 backdrop-blur-md shadow-2xl">
       <button
         onClick={() => handleLanguageChange('en')}
-        className={`px-3 py-1 rounded-full transition-colors ${
+        className={`px-2 md:px-3 py-1 rounded-full transition-colors ${
           locale === 'en'
-            ? 'bg-zinc-700 text-white shadow-lg'
+            ? 'bg-red-600/20 text-red-500 shadow-lg border border-red-500/30'
             : 'hover:text-zinc-300'
         }`}
       >
@@ -50,9 +50,9 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => handleLanguageChange('vi')}
-        className={`px-3 py-1 rounded-full transition-colors ${
+        className={`px-2 md:px-3 py-1 rounded-full transition-colors ${
           locale === 'vi'
-            ? 'bg-zinc-700 text-white shadow-lg'
+            ? 'bg-red-600/20 text-red-500 shadow-lg border border-red-500/30'
             : 'hover:text-zinc-300'
         }`}
       >
@@ -60,9 +60,9 @@ export default function LanguageSwitcher() {
       </button>
       <button
         onClick={() => handleLanguageChange('ko')}
-        className={`px-3 py-1 rounded-full transition-colors ${
+        className={`px-2 md:px-3 py-1 rounded-full transition-colors ${
           locale === 'ko'
-            ? 'bg-zinc-700 text-white shadow-lg'
+            ? 'bg-red-600/20 text-red-500 shadow-lg border border-red-500/30'
             : 'hover:text-zinc-300'
         }`}
       >

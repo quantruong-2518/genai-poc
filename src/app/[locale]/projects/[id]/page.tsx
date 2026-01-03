@@ -210,7 +210,7 @@ export default async function ProjectDetail({
         {/* Subtle decorative grid */}
         <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 z-0 pointer-events-none" />
 
-        <div className="container mx-auto max-w-5xl relative z-10">
+        <div className="container mx-auto max-w-5xl px-6 md:px-0 relative z-10">
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4">
               {/* Back Button (Mobile/Desktop friendly) */}
@@ -226,18 +226,18 @@ export default async function ProjectDetail({
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-2 leading-[1.1]"
+              className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white mb-2 leading-[1.1] wrap-break-word"
             >
               {t(`${pKey}.title`)}
             </motion.h1>
 
-            <div className="flex flex-col md:flex-row gap-12 items-start mt-4">
-              <div className="max-w-3xl">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start mt-4">
+              <div className="w-full">
                 <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.2 }}
-                  className="text-xl text-zinc-300 leading-relaxed font-light mb-8"
+                  className="text-base sm:text-lg md:text-xl text-zinc-300 leading-relaxed font-light mb-8"
                 >
                   {t(`${pKey}.longDescription`)}
                 </motion.p>
@@ -276,23 +276,23 @@ export default async function ProjectDetail({
         </div>
       </section>
       {/* New Section: System Interface (Carousel) */}
-      <section className="py-12 relative z-10 bg-[#080808]">
+      <section className="py-4 md:py-12 relative z-10 bg-[#080808]">
         <ScreenshotCarousel
           screenshots={screenshots}
           title={t(`${pKey}.title`)}
         />
       </section>
       {/* Interactive Feature 1: Orchestration/Security/Multimodal */}
-      <section className="py-20 bg-[#050505] border-t border-zinc-900">
+      <section className="py-12 md:py-20 bg-[#050505] border-t border-zinc-900">
         <div className="container mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <div className="w-16 h-16 bg-zinc-900/50 rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.05)]">
               <Cpu className="w-8 h-8 text-white" />
             </div>
-            <h2 className="text-4xl font-black mb-6 text-white uppercase tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white uppercase tracking-tight">
               {t(`${pKey}.features.${features.f1}.title`)}
             </h2>
-            <p className="text-zinc-400 text-lg leading-relaxed mb-8">
+            <p className="text-zinc-400 text-base md:text-lg leading-relaxed mb-8">
               {t(`${pKey}.features.${features.f1}.desc`)}
             </p>
           </div>
@@ -304,7 +304,7 @@ export default async function ProjectDetail({
         </div>
       </section>
       {/* Interactive Feature 2: Diagnosis/Cost/SaaS */}
-      <section className="py-20 border-t border-red-900/20 bg-[#0a0000]">
+      <section className="py-12 md:py-20 border-t border-red-900/20 bg-[#0a0000]">
         <div className="container mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-16 items-center md:flex-row-reverse">
           <div className="order-2 md:order-1 relative flex justify-center">
             <div className="absolute inset-0 bg-red-900/10 blur-3xl scale-90" />
@@ -320,17 +320,17 @@ export default async function ProjectDetail({
             <div className="w-16 h-16 bg-red-900/20 rounded-2xl flex items-center justify-center mb-6 border border-red-500/20">
               <ShieldCheck className="w-8 h-8 text-red-500" />
             </div>
-            <h2 className="text-4xl font-black mb-6 text-white uppercase tracking-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white uppercase tracking-tight">
               {t(`${pKey}.features.${features.f2}.title`)}
             </h2>
-            <p className="text-red-200/60 text-lg leading-relaxed mb-8">
+            <p className="text-red-200/60 text-base md:text-lg leading-relaxed mb-8">
               {t(`${pKey}.features.${features.f2}.desc`)}
             </p>
           </div>
         </div>
       </section>
       {/* NEW: Future Roadmap Section */}
-      <section className="py-24 bg-[#050000] relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-[#050000] relative overflow-hidden">
         {/* Background effects */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-red-900/10 via-black to-black opacity-70" />
 

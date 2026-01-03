@@ -44,14 +44,14 @@ export default async function Home({
       </div>
 
       <main className="container mx-auto px-6 py-24 relative z-10">
-        <div className="max-w-4xl mx-auto mb-20 text-center">
+        <div className="max-w-4xl mx-auto mb-12 md:mb-20 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-red-950/30 border border-red-500/20 text-red-500 text-xs font-bold tracking-[0.2em] uppercase mb-6 shadow-[0_0_15px_rgba(239,68,68,0.2)]"
+            className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-red-950/30 border border-red-500/20 text-red-500 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-6 shadow-[0_0_15px_rgba(239,68,68,0.2)]"
           >
-            <span className="w-2 h-2 rounded-full bg-red-500 animate-[ping_1.5s_infinite]" />
+            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-red-500 animate-[ping_1.5s_infinite]" />
             {t('badge')}
           </motion.div>
 
@@ -59,9 +59,9 @@ export default async function Home({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-white"
+            className="text-4xl sm:text-6xl md:text-8xl font-black mb-6 tracking-tighter text-white"
           >
-            <span className="bg-clip-text text-transparent bg-linear-to-b from-white via-white to-red-900/50">
+            <span className="bg-clip-text text-transparent bg-linear-to-b from-white via-white to-red-900/50 leading-tight">
               {t('title')}
             </span>
           </motion.h1>
@@ -70,7 +70,7 @@ export default async function Home({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-xl text-red-100/40 max-w-2xl mx-auto leading-relaxed font-light"
+            className="text-base md:text-xl text-red-100/40 max-w-2xl mx-auto leading-relaxed font-light px-4 md:px-0"
           >
             {t('subtitle')}
           </motion.p>
