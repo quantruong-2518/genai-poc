@@ -38,6 +38,7 @@ export default async function ProjectDetail({
   }
 
   const pKey = id;
+  const coverImage = COVER_IMAGES[pKey];
   const steps = [
     t(`${pKey}.demo.terminal.step1`),
     t(`${pKey}.demo.terminal.step2`),
@@ -180,134 +181,143 @@ export default async function ProjectDetail({
   const features = featureMaps[pKey] || featureMaps['jobpang'];
 
   return (
-    <div className="min-h-screen bg-[#050000] text-red-100 overflow-x-hidden selection:bg-red-500/30 font-sans">
-      {/* Dynamic Red Background Engine */}
-      <div className="absolute top-0 left-0 w-full h-[800px] bg-linear-to-b from-[#450a0a] via-[#1a0505] to-transparent pointer-events-none opacity-60" />
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-50 px-6 py-4 flex items-center justify-between pointer-events-none">
-        <Link
-          href={`/${locale}`}
-          className="pointer-events-auto flex items-center gap-2 text-sm text-red-200/60 hover:text-white transition-colors bg-black/50 backdrop-blur-md px-4 py-2 rounded-full border border-red-900/30 hover:border-red-500/50"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          Back to Foundry
-        </Link>
-      </nav>
-      {/* Hero Section: Premium + Context Aware */}
-      <section className="relative pt-40 pb-24 px-6 overflow-hidden">
-        {/* COVER IMAGE BACKGROUND */}
-        {COVER_IMAGES[pKey] && (
-          <div
-            className="absolute inset-0 bg-cover bg-center z-0"
-            style={{ backgroundImage: `url(${COVER_IMAGES[pKey]})` }}
-          >
-            {/* Image Processing Overlays */}
-            <div className="absolute inset-0 bg-[#050000]/80 backdrop-blur-[2px]" />
-            <div className="absolute inset-0 bg-linear-to-t from-[#050000] via-[#050000]/50 to-transparent" />
+    <div className="min-h-screen font-sans">
+      {/* Dynamic Background Elements - Futuristic Aurora */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        {/* Light Mode: Vibrant Cyan/Purple Mesh */}
+        <div className="absolute top-[-20%] right-[-10%] w-[70%] h-[60%] bg-cyan-400/20 dark:bg-red-900/10 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-normal" />
+        <div className="absolute bottom-[-10%] left-[-20%] w-[60%] h-[60%] bg-purple-400/20 dark:bg-indigo-900/10 rounded-full blur-[120px] mix-blend-multiply dark:mix-blend-normal" />
+        <div className="absolute top-[40%] left-[30%] w-[50%] h-[50%] bg-blue-300/20 dark:bg-transparent rounded-full blur-[100px] mix-blend-multiply" />
+
+        {/* Grid Pattern */}
+        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03] dark:opacity-[0.05]" />
+      </div>
+
+      {/* Hero Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="relative pt-40 pb-20 md:pt-48 md:pb-32 overflow-hidden min-h-[90vh] flex flex-col justify-end"
+      >
+        {/* Hero Background Image with Fade */}
+        {coverImage && (
+          <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 bg-linear-to-b from-slate-50/80 via-slate-50/60 to-slate-50 dark:from-[#0a0000]/80 dark:via-[#0a0000]/60 dark:to-[#0a0000] z-10" />
+            <div className="absolute inset-0 bg-linear-to-t from-white/80 via-transparent to-transparent dark:from-[#0a0000] dark:via-[#0a0000]/40 dark:to-transparent z-10" />
+            <img
+              src={coverImage}
+              alt="Hero Background"
+              className="w-full h-full object-cover opacity-80 dark:opacity-60 mix-blend-overlay filter blur-[1px] scale-105"
+            />
           </div>
         )}
 
-        {/* Subtle decorative grid */}
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-10 z-0 pointer-events-none" />
+        <div className="container mx-auto max-w-5xl px-6 relative z-10">
+          {/* Meta Header - Minimal, No Pill */}
+          <div className="flex items-center gap-4 mb-2">
+            <span className="text-xs md:text-sm font-black uppercase tracking-[0.3em] text-blue-600 dark:text-red-500">
+              Case Study // {pKey}
+            </span>
+          </div>
 
-        <div className="container mx-auto max-w-5xl px-6 md:px-0 relative z-10">
-          <div className="flex flex-col gap-6">
-            <div className="flex items-center gap-4">
-              {/* Back Button (Mobile/Desktop friendly) */}
-              <Link
-                href={`/${locale}`}
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 text-white hover:bg-white/10 transition-colors backdrop-blur-sm"
-              >
-                <ArrowLeft className="w-5 h-5" />
-              </Link>
-            </div>
-
+          <div className="max-w-4xl">
             <motion.h1
-              initial={{ opacity: 0, y: 15 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              className="text-3xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white mb-2 leading-[1.1] wrap-break-word"
+              transition={{ delay: 0.2, duration: 0.8 }}
+              className="text-5xl sm:text-7xl md:text-[6rem] font-black tracking-tighter text-slate-900 dark:text-white mb-8 leading-[0.85] uppercase wrap-break-word"
             >
               {t(`${pKey}.title`)}
             </motion.h1>
 
-            <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start mt-4">
-              <div className="w-full">
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.2 }}
-                  className="text-base sm:text-lg md:text-xl text-zinc-300 leading-relaxed font-light mb-8"
-                >
-                  {t(`${pKey}.longDescription`)}
-                </motion.p>
+            <div className="mt-12 max-w-3xl">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed font-light mb-8"
+              >
+                {t(`${pKey}.longDescription`)}
+              </motion.p>
 
-                {/* TECH STACK MARQUEE: Under description as requested */}
-                <div className="border-t border-white/10 pt-6">
-                  <div className="text-[10px] uppercase text-zinc-500 tracking-widest mb-4 font-mono">
-                    Powered By
-                  </div>
-                  <TechStackVisualizer stacks={stackItems} />
-                </div>
-              </div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.8 }}
+                className="mb-12"
+              >
+                <blockquote className="text-lg md:text-xl font-medium text-blue-600 dark:text-red-400 italic border-l-2 border-blue-600 dark:border-red-500 pl-6 py-1 opacity-90">
+                  "{t(`${pKey}.impact`)}"
+                </blockquote>
+              </motion.div>
 
-              {/* Optional: Project Stats / Meta */}
-              <div className="hidden md:flex flex-col gap-4 min-w-[200px] border-l border-white/10 pl-6 shrink-0">
-                <div>
-                  <div className="text-[10px] uppercase text-zinc-500 tracking-widest mb-1">
-                    Impact
-                  </div>
-                  <div className="text-sm font-semibold text-emerald-400">
-                    High Efficiency
-                  </div>
-                </div>
-                <div>
-                  <div className="text-[10px] uppercase text-zinc-500 tracking-widest mb-1">
-                    Status
-                  </div>
-                  <div className="text-sm font-semibold text-white flex items-center gap-2">
-                    <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                    Production Ready
-                  </div>
-                </div>
-              </div>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                className="pt-8 border-t border-slate-100 dark:border-slate-800"
+              >
+                <TechStackVisualizer stacks={stackItems} />
+              </motion.div>
             </div>
           </div>
         </div>
-      </section>
-      {/* New Section: System Interface (Carousel) */}
-      <section className="py-4 md:py-12 relative z-10 bg-[#080808]">
+      </motion.section>
+
+      {/* Section: Visual Product Tour */}
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: '-10%' }}
+        transition={{ duration: 0.8 }}
+        className="py-12 md:py-24 relative z-10 bg-slate-50/50 dark:bg-slate-900/40 border-y border-slate-100 dark:border-slate-800"
+      >
         <ScreenshotCarousel
           screenshots={screenshots}
           title={t(`${pKey}.title`)}
         />
-      </section>
-      {/* Interactive Feature 1: Orchestration/Security/Multimodal */}
-      <section className="py-12 md:py-20 bg-[#050505] border-t border-zinc-900">
-        <div className="container mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="w-16 h-16 bg-zinc-900/50 rounded-2xl flex items-center justify-center mb-6 border border-white/10 shadow-[0_0_30px_rgba(255,255,255,0.05)]">
-              <Cpu className="w-8 h-8 text-white" />
+      </motion.section>
+
+      {/* Part I: The Intelligence Engine */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="py-20 md:py-32 relative overflow-hidden bg-white dark:bg-[#0a0000]"
+      >
+        <div className="container mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-20 items-center">
+          <div className="relative z-10">
+            <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-4 opacity-70">
+              01 / Intelligence
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white tracking-tight leading-tight">
               {t(`${pKey}.features.${features.f1}.title`)}
             </h2>
-            <p className="text-zinc-400 text-base md:text-lg leading-relaxed mb-8">
+            <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-normal line-clamp-3">
               {t(`${pKey}.features.${features.f1}.desc`)}
             </p>
           </div>
 
-          <div className="relative">
-            <div className="absolute inset-0 bg-white/5 blur-3xl transform rotate-3 scale-90" />
+          <div className="relative group">
+            <div className="absolute inset-0 bg-blue-100/40 blur-3xl transform rotate-3 scale-95 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <TerminalSimulation steps={steps} />
           </div>
         </div>
-      </section>
-      {/* Interactive Feature 2: Diagnosis/Cost/SaaS */}
-      <section className="py-12 md:py-20 border-t border-red-900/20 bg-[#0a0000]">
-        <div className="container mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-16 items-center md:flex-row-reverse">
-          <div className="order-2 md:order-1 relative flex justify-center">
-            <div className="absolute inset-0 bg-red-900/10 blur-3xl scale-90" />
+      </motion.section>
+
+      {/* Part II: The Application */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="py-20 md:py-32 border-t border-slate-100 dark:border-slate-800 bg-slate-50/30 dark:bg-slate-900/20"
+      >
+        <div className="container mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-20 items-center">
+          <div className="relative group md:order-1 order-2">
+            <div className="absolute inset-0 bg-purple-100/40 dark:bg-purple-900/10 blur-3xl scale-95 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
             <AnalysisPanel
               type={features.type}
               analyzingText={t(`${pKey}.demo.scanner.analyzing`)}
@@ -316,32 +326,38 @@ export default async function ProjectDetail({
             />
           </div>
 
-          <div className="order-1 md:order-2">
-            <div className="w-16 h-16 bg-red-900/20 rounded-2xl flex items-center justify-center mb-6 border border-red-500/20">
-              <ShieldCheck className="w-8 h-8 text-red-500" />
+          <div className="md:order-2 order-1">
+            <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400 mb-4 opacity-70">
+              02 / Architecture
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black mb-4 md:mb-6 text-white uppercase tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white tracking-tight leading-tight">
               {t(`${pKey}.features.${features.f2}.title`)}
             </h2>
-            <p className="text-red-200/60 text-base md:text-lg leading-relaxed mb-8">
+            <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-normal line-clamp-3">
               {t(`${pKey}.features.${features.f2}.desc`)}
             </p>
           </div>
         </div>
-      </section>
-      {/* NEW: Future Roadmap Section */}
-      <section className="py-16 md:py-24 bg-[#050000] relative overflow-hidden">
-        {/* Background effects */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-red-900/10 via-black to-black opacity-70" />
+      </motion.section>
+
+      {/* Roadmap Section */}
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="py-24 md:py-40 bg-white dark:bg-[#0a0000] relative overflow-hidden"
+      >
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[600px] bg-blue-50/30 dark:bg-red-900/10 blur-[120px] rounded-full" />
 
         <div className="container mx-auto max-w-5xl px-6 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-black text-white uppercase tracking-tighter mb-4">
+          <div className="text-center mb-24">
+            <h2 className="text-4xl md:text-6xl font-black text-slate-900 dark:text-white tracking-tighter mb-6">
               {t(`${pKey}.roadmap.title`)}
             </h2>
-            <p className="text-zinc-500 max-w-xl mx-auto">
-              Strategic vision and technological milestones for the next phase
-              of {t(`${pKey}.title`)}.
+            <p className="text-slate-500 dark:text-slate-400 max-w-xl mx-auto text-lg font-medium">
+              Strategic vision and technological milestones for the next
+              evolution of {t(`${pKey}.title`)}.
             </p>
           </div>
 
@@ -365,7 +381,14 @@ export default async function ProjectDetail({
             ]}
           />
         </div>
-      </section>
+      </motion.section>
+
+      {/* Page Footer */}
+      <footer className="border-t-2 border-slate-900 dark:border-white pt-6 pb-8 flex flex-col md:flex-row justify-center items-center gap-4 text-xs font-bold text-slate-900 dark:text-white uppercase tracking-widest bg-slate-50/30 dark:bg-[#0a0000]">
+        <div className="flex items-center gap-4">
+          <span>Precision Engineered by ITK FOUNDRY © 2026</span>
+        </div>
+      </footer>
     </div>
   );
 }

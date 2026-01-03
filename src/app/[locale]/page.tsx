@@ -1,6 +1,9 @@
-import { ProjectCard } from '@/components/ProjectCard';
-import { getTranslations } from 'next-intl/server';
+import { Sparkles, ArrowRight } from 'lucide-react';
 import * as motion from 'framer-motion/client';
+
+import { ProjectCard } from '@/components/ProjectCard';
+import { StarField } from '@/components/StarField';
+import { getTranslations } from 'next-intl/server';
 
 export default async function Home({
   params,
@@ -11,8 +14,7 @@ export default async function Home({
   const t = await getTranslations('Dashboard');
   const tProjects = await getTranslations('Projects');
 
-  // List of projects to display
-  const projectKeys = [
+  const pKeys = [
     'jobpang',
     'monthler',
     'genai-poc',
@@ -21,76 +23,131 @@ export default async function Home({
     'edtech',
   ];
 
-  const projects = projectKeys.map(key => ({
-    id: key,
-    title: tProjects(`${key}.title`),
-    description: tProjects(`${key}.description`),
-    impact: tProjects(`${key}.impact`),
-    categories: [
-      tProjects(`${key}.categories.0`),
-      tProjects(`${key}.categories.1`),
-      tProjects(`${key}.categories.2`),
-      tProjects(`${key}.categories.3`),
-    ],
-  }));
+  const projects = pKeys.map((key: string) => {
+    let categories: string[] = [];
+    try {
+      categories = tProjects.raw(`${key}.categories`) || [];
+    } catch (e) {
+      console.warn(`Missing categories for project: ${key}`);
+    }
+
+    return {
+      id: key,
+      title: tProjects(`${key}.title`),
+      description: tProjects(`${key}.description`),
+      impact: tProjects(`${key}.impact`),
+      categories: Array.isArray(categories) ? categories : [],
+    };
+  });
 
   return (
-    <div className="min-h-screen bg-[#0a0000] text-red-100 font-sans selection:bg-red-500/30">
-      {/* Dynamic Background Engine */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-red-900/20 blur-[120px] rounded-full opacity-40 mix-blend-screen" />
-        <div className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-indigo-900/10 blur-[100px] rounded-full opacity-30 mix-blend-screen" />
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-[0.03]" />
+    <main className="min-h-screen relative overflow-hidden">
+      {/* Premium Gradient Background Elements */}
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <div className="absolute inset-0 bg-linear-to-b from-transparent to-red-950/20 dark:to-red-950/30 opacity-50" />
+        <StarField />
       </div>
 
-      <main className="container mx-auto px-6 py-24 relative z-10">
-        <div className="max-w-4xl mx-auto mb-12 md:mb-20 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 py-2 px-4 rounded-full bg-red-950/30 border border-red-500/20 text-red-500 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mb-6 shadow-[0_0_15px_rgba(239,68,68,0.2)]"
-          >
-            <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-red-500 animate-[ping_1.5s_infinite]" />
-            {t('badge')}
-          </motion.div>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-4xl sm:text-6xl md:text-8xl font-black mb-6 tracking-tighter text-white"
-          >
-            <span className="bg-clip-text text-transparent bg-linear-to-b from-white via-white to-red-900/50 leading-tight">
+      <div className="container mx-auto px-6 pt-32 pb-20 md:pt-48 md:pb-32 relative z-10">
+        <div className="flex flex-col gap-8 md:gap-12">
+          {/* Editorial Header */}
+          <div className="border-b-4 border-slate-900 dark:border-white pb-8 md:pb-12">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: 'circOut' }}
+              className="text-5xl sm:text-7xl md:text-[9rem] leading-[0.85] md:leading-[0.8] font-black tracking-tighter text-slate-900 dark:text-white uppercase wrap-break-word"
+            >
               {t('title')}
+            </motion.h1>
+            <div className="flex justify-between items-end mt-6 md:mt-8">
+              <span className="text-[10px] md:text-sm font-bold uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
+                Est. 2026 — GenAI Solutions
+              </span>
+              <span className="hidden md:block text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
+                Internal Ecosystem
+              </span>
+            </div>
+          </div>
+
+          {/* Editorial Content with Drop Cap */}
+          <div className="grid md:grid-cols-12 gap-12 md:gap-16 mt-12 md:mt-0">
+            <div className="md:col-span-4 hidden md:block">
+              <div className="w-full h-full border-r border-slate-200 dark:border-white/10 relative min-h-40">
+                <span className="absolute top-0 left-0 text-[10px] font-mono text-slate-400 -rotate-90 origin-top-left translate-y-full">
+                  SCROLL_TO_DISCOVER
+                </span>
+              </div>
+            </div>
+
+            <div className="md:col-span-8">
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 0.8 }}
+                className="text-lg md:text-2xl md:leading-relaxed text-slate-800 dark:text-slate-200 font-medium text-justify"
+              >
+                <span className="float-left text-6xl md:text-9xl font-black leading-[0.8] mr-4 md:mr-6 mt-1 md:mt-[-6px] text-slate-900 dark:text-white">
+                  {t('subtitle').charAt(0)}
+                </span>
+                {t('subtitle').slice(1)}
+              </motion.p>
+            </div>
+          </div>
+        </div>
+
+        {/* Dynamic Project Grid */}
+        <section className="mb-32 mt-32 md:mt-48">
+          <div className="flex items-center gap-6 mb-16">
+            <div className="h-px flex-1 bg-slate-200 dark:bg-white/20" />
+            <h2 className="text-xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight uppercase flex items-center gap-3">
+              Active Ecosystem
+              <span className="text-xs md:text-sm font-medium text-slate-500 bg-slate-100 dark:bg-white/10 px-2 py-1 rounded-full">
+                {projects.length}
+              </span>
+            </h2>
+            <div className="h-px flex-1 bg-slate-200 dark:bg-white/20" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 min-h-[400px] group/active-ecosystem">
+            {projects.map((project, idx) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 1, y: 5 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: idx * 0.05 }}
+              >
+                <ProjectCard
+                  id={project.id}
+                  locale={locale}
+                  title={project.title}
+                  description={project.description}
+                  impact={project.impact}
+                  categories={project.categories}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        {/* Footer / Status Bar */}
+        <footer className="border-t-2 border-slate-900 dark:border-white pt-6 pb-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-bold text-slate-900 dark:text-white uppercase tracking-widest">
+          <div className="flex items-center gap-4">
+            <span>© 2026 GENAI FOUNDRY</span>
+          </div>
+          <div className="flex gap-8">
+            <span className="hover:text-blue-600 dark:hover:text-red-500 cursor-pointer transition-colors">
+              Documentation
             </span>
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="text-base md:text-xl text-red-100/40 max-w-2xl mx-auto leading-relaxed font-light px-4 md:px-0"
-          >
-            {t('subtitle')}
-          </motion.p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map(project => (
-            <ProjectCard key={project.id} {...project} locale={locale} />
-          ))}
-        </div>
-      </main>
-
-      {/* Footer / Status Bar */}
-      <footer className="fixed bottom-0 left-0 w-full border-t border-white/5 bg-black/20 backdrop-blur-md py-3 px-6 text-xs text-zinc-500 flex justify-between items-center z-50">
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          {t('footer')}
-        </div>
-        <div>v0.2.0-i18n</div>
-      </footer>
-    </div>
+            <span className="hover:text-blue-600 dark:hover:text-red-500 cursor-pointer transition-colors">
+              Bias Audit
+            </span>
+            <span className="hover:text-blue-600 dark:hover:text-red-500 cursor-pointer transition-colors">
+              Status: Operational
+            </span>
+          </div>
+        </footer>
+      </div>
+    </main>
   );
 }

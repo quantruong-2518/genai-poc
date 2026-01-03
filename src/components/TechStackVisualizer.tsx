@@ -16,31 +16,31 @@ import {
   Zap,
 } from 'lucide-react';
 
-// Map stack names to Lucide icons
-const TECH_ICONS: Record<string, any> = {
-  'Next.js': Globe,
-  React: Layout,
-  TypeScript: Code2,
-  Tailwind: Layout,
-  'Node.js': Server,
-  NestJS: Server,
-  Python: Terminal,
-  FastAPI: Zap,
-  PostgreSQL: Database,
-  Redis: Layers,
-  MongoDB: Database,
-  Firebase: Cloud,
-  Flutter: Smartphone,
-  AWS: Cloud,
-  GCP: Cloud,
-  Docker: Layers,
-  Kubernetes: Layers,
-  OpenAI: Bot,
-  Gemini: Zap,
-  Claude: Bot,
-  'Llama 2': Cpu,
-  LangChain: Terminal,
-  HuggingFace: Bot,
+// Map stack names to Simple Icons slugs
+const STACK_SLUGS: Record<string, string> = {
+  'Next.js': 'nextdotjs',
+  React: 'react',
+  TypeScript: 'typescript',
+  Tailwind: 'tailwindcss',
+  'Node.js': 'nodedotjs',
+  NestJS: 'nestjs',
+  Python: 'python',
+  FastAPI: 'fastapi',
+  PostgreSQL: 'postgresql',
+  Redis: 'redis',
+  MongoDB: 'mongodb',
+  Firebase: 'firebase',
+  Flutter: 'flutter',
+  AWS: 'amazonaws',
+  GCP: 'googlecloud',
+  Docker: 'docker',
+  Kubernetes: 'kubernetes',
+  OpenAI: 'openai',
+  Gemini: 'googlegemini',
+  Claude: 'anthropic',
+  'Llama 2': 'meta', // Meta AI
+  LangChain: 'langchain',
+  HuggingFace: 'huggingface',
 };
 
 interface TechStackItem {
@@ -55,40 +55,60 @@ interface TechStackVisualizerProps {
 }
 
 export function TechStackVisualizer({ stacks }: TechStackVisualizerProps) {
-  // Duplicate array for seamless loop
-  const marqueeStacks = [...stacks, ...stacks, ...stacks, ...stacks];
+  // 8x duplication for ultra-seamless loop on large screens
+  const marqueeStacks = [
+    ...stacks,
+    ...stacks,
+    ...stacks,
+    ...stacks,
+    ...stacks,
+    ...stacks,
+    ...stacks,
+    ...stacks,
+  ];
 
   return (
-    <div className="w-full relative overflow-hidden py-4 pointer-events-none select-none mask-linear-fade">
+    <div className="w-full relative overflow-hidden py-6 pointer-events-none select-none">
       {/* CSS Mask for fade edges */}
-      <div className="absolute inset-y-0 left-0 w-24 bg-linear-to-r from-[#080808] to-transparent z-10" />
-      <div className="absolute inset-y-0 right-0 w-24 bg-linear-to-l from-[#080808] to-transparent z-10" />
+      <div className="absolute inset-y-0 left-0 w-32 bg-linear-to-r from-white dark:from-[#0a0000] to-transparent z-10" />
+      <div className="absolute inset-y-0 right-0 w-32 bg-linear-to-l from-white dark:from-[#0a0000] to-transparent z-10" />
 
       <motion.div
-        className="flex gap-12 w-max"
-        animate={{ x: [0, -1000] }}
+        className="flex gap-16 w-max"
+        animate={{ x: [0, -2000] }}
         transition={{
           x: {
             repeat: Infinity,
             repeatType: 'loop',
-            duration: 40,
+            duration: 60,
             ease: 'linear',
           },
         }}
       >
         {marqueeStacks.map((stack, idx) => {
-          const Icon = TECH_ICONS[stack.name] || Code2;
+          const slug = STACK_SLUGS[stack.name];
+
           return (
             <div
               key={`${stack.name}-${idx}`}
-              className="flex items-center gap-3 opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="flex items-center gap-4 transition-all duration-300 relative group/icon"
             >
-              <div className="p-1.5 bg-white/5 rounded-md border border-white/5">
-                <Icon className="w-4 h-4 text-zinc-300" />
-              </div>
-              <span className="text-sm font-mono font-bold text-zinc-500 uppercase tracking-wider">
+              {/* Real Logo - Raw Color */}
+              {slug ? (
+                <img
+                  src={`https://cdn.simpleicons.org/${slug}`}
+                  alt={stack.name}
+                  className="w-10 h-10 object-contain hover:scale-110 transition-transform duration-300 opacity-90 hover:opacity-100"
+                />
+              ) : (
+                // Fallback to Lucide Icon
+                <Code2 className="w-10 h-10 text-slate-400 transition-colors" />
+              )}
+
+              {/* Minimal Tooltip */}
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/icon:opacity-100 transition-opacity text-[9px] font-black uppercase tracking-widest text-slate-900 dark:text-white whitespace-nowrap pointer-events-none">
                 {stack.name}
-              </span>
+              </div>
             </div>
           );
         })}

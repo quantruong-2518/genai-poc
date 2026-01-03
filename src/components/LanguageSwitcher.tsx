@@ -37,33 +37,33 @@ export default function LanguageSwitcher() {
   }, [locale]);
 
   return (
-    <div className="flex gap-1 md:gap-2 text-[10px] md:text-xs font-medium text-zinc-500 bg-black/60 p-1 rounded-full border border-white/10 backdrop-blur-md shadow-2xl">
+    <div className="flex items-center gap-1 text-[10px] md:text-xs font-bold bg-white/50 dark:bg-black/20 p-1 rounded-full backdrop-blur-sm border border-transparent hover:border-slate-200 dark:hover:border-white/10 transition-all">
       <button
         onClick={() => handleLanguageChange('en')}
-        className={`px-2 md:px-3 py-1 rounded-full transition-colors ${
+        className={`px-3 py-1.5 rounded-full transition-all ${
           locale === 'en'
-            ? 'bg-red-600/20 text-red-500 shadow-lg border border-red-500/30'
-            : 'hover:text-zinc-300'
+            ? 'bg-white dark:bg-zinc-800 text-black dark:text-white shadow-sm'
+            : 'text-slate-400 hover:text-slate-600 dark:text-zinc-600 dark:hover:text-zinc-400'
         }`}
       >
         EN
       </button>
       <button
         onClick={() => handleLanguageChange('vi')}
-        className={`px-2 md:px-3 py-1 rounded-full transition-colors ${
+        className={`px-3 py-1.5 rounded-full transition-all ${
           locale === 'vi'
-            ? 'bg-red-600/20 text-red-500 shadow-lg border border-red-500/30'
-            : 'hover:text-zinc-300'
+            ? 'bg-white dark:bg-zinc-800 text-black dark:text-white shadow-sm'
+            : 'text-slate-400 hover:text-slate-600 dark:text-zinc-600 dark:hover:text-zinc-400'
         }`}
       >
         VI
       </button>
       <button
         onClick={() => handleLanguageChange('ko')}
-        className={`px-2 md:px-3 py-1 rounded-full transition-colors ${
+        className={`px-3 py-1.5 rounded-full transition-all ${
           locale === 'ko'
-            ? 'bg-red-600/20 text-red-500 shadow-lg border border-red-500/30'
-            : 'hover:text-zinc-300'
+            ? 'bg-white dark:bg-zinc-800 text-black dark:text-white shadow-sm'
+            : 'text-slate-400 hover:text-slate-600 dark:text-zinc-600 dark:hover:text-zinc-400'
         }`}
       >
         KO

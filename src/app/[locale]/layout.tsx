@@ -1,17 +1,18 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Space_Grotesk, Inter } from 'next/font/google';
 import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import { Header } from '@/components/Header';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-heading',
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const inter = Inter({
+  variable: '--font-sans',
   subsets: ['latin'],
 });
 
@@ -25,6 +26,10 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
+    icons: {
+      icon: '/favicon-v3.png',
+      shortcut: '/favicon-v3.png',
+    },
   };
 }
 
@@ -39,17 +44,32 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              try {
+                const theme = localStorage.getItem('theme');
+                const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (theme === 'dark' || (!theme && supportDarkMode)) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              } catch (e) {}
+            `,
+          }}
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${spaceGrotesk.variable} ${inter.variable} antialiased selection:bg-blue-500/20`}
       >
         <NextIntlClientProvider messages={messages}>
-          {children}
-
-          {/* Floating Language Switcher */}
-          <div className="fixed top-6 right-6 z-50">
-            <LanguageSwitcher />
-          </div>
+          <ThemeProvider>
+            <Header />
+            <main>{children}</main>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

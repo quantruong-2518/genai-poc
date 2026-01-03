@@ -324,7 +324,7 @@
       }
     },
     "eat-what": {
-      "title": "WhatEat - Trợ Lý Dinh Dưỡng",
+      "title": "WhatEat",
       "description": "Ứng dụng theo dõi dinh dưỡng thông minh sử dụng AI Vision để nhận diện món ăn, tính calo và gamification hóa thói quen ăn uống.",
       "tags": [
         "Health Tech",

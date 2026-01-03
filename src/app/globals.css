@@ -2,38 +2,64 @@
 
 @plugin "@tailwindcss/typography";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
 }
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --card: #171717;
-  --accent: #3b82f6;
-  --accent-glow: rgba(59, 130, 246, 0.5);
+  /* Futuristic Light Mode: Cool Blue-White Tint */
+  --background: #f0f7ff;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --accent: #2563eb; /* Electric Blue */
+  --accent-purple: #7c3aed; /* Vivid Purple */
+  --accent-glow: rgba(37, 99, 235, 0.15); /* Stronger glow */
+  --border: #e2e8f0;
+}
+
+.dark {
+  --background: #0f0505; /* Deep, rich red-black, softer than pure black */
+  --foreground: #e2e8f0; /* slate-200, easier on eyes than white/red-100 */
+  --card: #1f0a0a; /* Darker red-tinted card background */
+  --accent: #ef4444; /* red-500 */
+  --accent-purple: #6366f1; /* indigo-500 */
+  --accent-glow: rgba(239, 68, 68, 0.15);
+  --border: #450a0a; /* red-950 */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
+  transition: background-color 0.5s ease, color 0.5s ease;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
+}
+
 /* Custom premium scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: #333;
-  border-radius: 4px;
+  background: var(--border);
+  border: 2px solid var(--background);
+  border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--accent);
 }
