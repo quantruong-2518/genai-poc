@@ -25,7 +25,7 @@ export function Header() {
               <span className="text-sm md:text-base font-black tracking-tight leading-none bg-linear-to-r from-blue-600 to-violet-600 dark:from-red-500 dark:to-pink-500 bg-clip-text text-transparent transition-all duration-500">
                 GenAI
               </span>
-              <span className="text-[9px] md:text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em] leading-none mt-0.5 md:mt-1 group-hover:text-blue-600 dark:group-hover:text-red-500 transition-colors">
+              <span className="text-xs md:text-xs font-bold text-slate-600 dark:text-slate-400 uppercase tracking-[0.2em] leading-none mt-0.5 md:mt-1 group-hover:text-blue-600 dark:group-hover:text-red-500 transition-colors">
                 Foundry
               </span>
             </div>

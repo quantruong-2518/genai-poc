@@ -203,12 +203,13 @@ export default async function ProjectDetail({
         {/* Hero Background Image with Fade */}
         {coverImage && (
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-linear-to-b from-slate-50/80 via-slate-50/60 to-slate-50 dark:from-[#0a0000]/80 dark:via-[#0a0000]/60 dark:to-[#0a0000] z-10" />
-            <div className="absolute inset-0 bg-linear-to-t from-white/80 via-transparent to-transparent dark:from-[#0a0000] dark:via-[#0a0000]/40 dark:to-transparent z-10" />
+            {/* Stronger / Cleaner backdrop for better text readability */}
+            <div className="absolute inset-0 bg-linear-to-b from-slate-50/95 via-slate-50/80 to-slate-50 dark:from-[#0a0000]/95 dark:via-[#0a0000]/80 dark:to-[#0a0000] z-10" />
+            <div className="absolute inset-0 bg-linear-to-t from-white/90 via-white/40 to-transparent dark:from-[#0a0000] dark:via-[#0a0000]/40 dark:to-transparent z-10" />
             <img
               src={coverImage}
               alt="Hero Background"
-              className="w-full h-full object-cover opacity-80 dark:opacity-60 mix-blend-overlay filter blur-[1px] scale-105"
+              className="w-full h-full object-cover opacity-50 dark:opacity-40 filter blur-[2px] scale-105 saturate-0"
             />
           </div>
         )}
@@ -236,7 +237,7 @@ export default async function ProjectDetail({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.8 }}
-                className="text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed font-light mb-8"
+                className="text-lg md:text-xl text-slate-800 dark:text-slate-200 leading-relaxed font-normal mb-8"
               >
                 {t(`${pKey}.longDescription`)}
               </motion.p>
@@ -294,7 +295,7 @@ export default async function ProjectDetail({
             <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white tracking-tight leading-tight">
               {t(`${pKey}.features.${features.f1}.title`)}
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-normal line-clamp-3">
+            <p className="text-slate-800 dark:text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-medium line-clamp-3">
               {t(`${pKey}.features.${features.f1}.desc`)}
             </p>
           </div>
@@ -332,7 +333,7 @@ export default async function ProjectDetail({
             <h2 className="text-3xl md:text-4xl font-black mb-6 text-slate-900 dark:text-white tracking-tight leading-tight">
               {t(`${pKey}.features.${features.f2}.title`)}
             </h2>
-            <p className="text-slate-600 dark:text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-normal line-clamp-3">
+            <p className="text-slate-800 dark:text-slate-400 text-base md:text-lg leading-relaxed mb-10 font-medium line-clamp-3">
               {t(`${pKey}.features.${features.f2}.desc`)}
             </p>
           </div>

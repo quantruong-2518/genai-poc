@@ -161,11 +161,11 @@ export function AnalysisPanel({
           </div>
 
           {/* Dynamic Metrics */}
-          <div className="text-slate-500 dark:text-red-900/50 text-[10px] font-bold uppercase tracking-widest mb-4 text-left space-y-1">
+          <div className="text-slate-700 dark:text-red-900/50 text-[10px] font-black uppercase tracking-widest mb-4 text-left space-y-1">
             {renderMetrics()}
           </div>
 
-          <p className="text-xs text-slate-600 dark:text-red-100 italic font-semibold leading-relaxed">
+          <p className="text-xs text-slate-800 dark:text-red-100 italic font-bold leading-relaxed">
             "{commentText}"
           </p>
         </motion.div>

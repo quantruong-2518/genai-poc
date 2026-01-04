@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { Terminal, CheckCircle2, Circle } from 'lucide-react';
+import { CheckCircle2, Circle } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface TerminalStep {
@@ -35,10 +35,7 @@ export function TerminalSimulation({ steps }: TerminalSimulationProps) {
           <div className="w-3 h-3 rounded-full bg-slate-200 dark:bg-red-900/30" />
           <div className="w-3 h-3 rounded-full bg-slate-200 dark:bg-red-900/30" />
         </div>
-        <div className="flex items-center gap-2 text-slate-400 dark:text-red-900 font-bold tracking-tight">
-          <Terminal className="w-3 h-3" />
-          <span>intelligence.runtime.v2</span>
-        </div>
+        <div />
       </div>
 
       {/* Body */}
@@ -57,9 +54,11 @@ export function TerminalSimulation({ steps }: TerminalSimulationProps) {
               }}
               className={cn(
                 'flex items-center gap-3',
-                isActive && 'text-blue-600 dark:text-red-500 font-black',
-                isDone && 'text-slate-400 dark:text-red-800',
-                !isDone && !isActive && 'text-slate-300 dark:text-red-950',
+                isActive && 'text-blue-700 dark:text-red-500 font-extrabold',
+                isDone && 'text-slate-700 dark:text-red-800 font-medium',
+                !isDone &&
+                  !isActive &&
+                  'text-slate-500 dark:text-red-950 font-medium',
               )}
             >
               {isDone ? (
@@ -77,16 +76,6 @@ export function TerminalSimulation({ steps }: TerminalSimulationProps) {
             </motion.div>
           );
         })}
-        {activeStep === steps.length && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-slate-400 dark:text-red-800 pt-3 font-bold border-t border-slate-50 dark:border-red-900/20"
-          >
-            <span className="text-blue-500 dark:text-red-500 mr-2">➜</span>{' '}
-            Process finalized in 1.2s
-          </motion.div>
-        )}
       </div>
     </div>
   );

@@ -61,7 +61,7 @@ export default async function Home({
               {t('title')}
             </motion.h1>
             <div className="flex justify-between items-end mt-6 md:mt-8">
-              <span className="text-[10px] md:text-sm font-bold uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
+              <span className="text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-slate-600 dark:text-slate-400">
                 Est. 2026 — GenAI Solutions
               </span>
               <span className="hidden md:block text-xs md:text-sm font-bold uppercase tracking-[0.3em] text-slate-500 dark:text-slate-400">
@@ -102,7 +102,7 @@ export default async function Home({
             <div className="h-px flex-1 bg-slate-200 dark:bg-white/20" />
             <h2 className="text-xl md:text-3xl font-black text-slate-900 dark:text-white tracking-tight uppercase flex items-center gap-3">
               Active Ecosystem
-              <span className="text-xs md:text-sm font-medium text-slate-500 bg-slate-100 dark:bg-white/10 px-2 py-1 rounded-full">
+              <span className="text-xs md:text-sm font-medium text-slate-600 bg-slate-100 dark:bg-white/10 px-2 py-1 rounded-full">
                 {projects.length}
               </span>
             </h2>

@@ -83,7 +83,7 @@ export function ProjectCard({
               {categories.slice(0, 2).map((cat, i) => (
                 <span
                   key={i}
-                  className="px-2 py-1 bg-black/80 backdrop-blur-md border border-white/10 text-[9px] font-bold text-white uppercase tracking-widest shadow-sm"
+                  className="px-2 py-1 bg-black/80 backdrop-blur-md border border-white/10 text-[10px] font-bold text-white uppercase tracking-widest shadow-sm"
                 >
                   {cat}
                 </span>
@@ -112,7 +112,7 @@ export function ProjectCard({
               />
             </div>
 
-            <p className="text-sm md:text-base text-slate-600 dark:text-slate-400 leading-relaxed mb-8 line-clamp-3">
+            <p className="text-base text-slate-700 dark:text-slate-400 leading-relaxed mb-8 line-clamp-3">
               {description}
             </p>
 
@@ -120,16 +120,16 @@ export function ProjectCard({
               {impact && (
                 <div className="space-y-2">
                   <div
-                    className={`text-[9px] font-bold uppercase tracking-widest transition-colors ${
+                    className={`text-xs font-bold uppercase tracking-widest transition-colors ${
                       isMobileActive
                         ? 'text-blue-600 dark:text-red-500'
-                        : 'text-slate-400 dark:text-slate-500'
+                        : 'text-slate-500 dark:text-slate-500'
                     }`}
                   >
                     Strategic Outcome
                   </div>
                   <p
-                    className={`text-xs font-bold italic leading-snug transition-colors ${
+                    className={`text-sm font-bold italic leading-snug transition-colors ${
                       isMobileActive
                         ? 'text-slate-900 dark:text-white'
                         : 'text-slate-800 dark:text-slate-300'
@@ -141,7 +141,7 @@ export function ProjectCard({
               )}
 
               <div
-                className={`inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest transition-colors ${
+                className={`inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest transition-colors ${
                   isMobileActive
                     ? 'text-red-600 dark:text-red-500'
                     : 'text-slate-900 dark:text-white md:hover:text-red-600 dark:md:hover:text-red-500'
