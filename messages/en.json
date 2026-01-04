@@ -38,12 +38,12 @@
         }
       },
       "screenshots": {
-        "s1": "Resume Dashboard: Overview of candidate profile and optimization score.",
-        "s2": "Job Matching Engine: Real-time analysis of JD vs CV fit percentage.",
-        "s3": "In-Depth Audit: Line-by-line AI critique of resume content.",
-        "s4": "Comprehensive Report: Detailed breakdown of strengths and weaknesses.",
-        "s5": "Community Hub: Peer reviews and shared success stories.",
-        "s6": "Career Roadmap: Suggested skill acquisition path for target roles."
+        "s1": "Smart Resume Editor: AI detects errors and suggests spelling and style improvements",
+        "s2": "Detailed Matching Report: Evaluates candidate-JD fit across 3 dimensions (Culture Fit, Requirements, Experience)",
+        "s3": "Visual Resume Diagnostics: Chart analyzing 7 criteria and detailed requirement assessment",
+        "s4": "Overview Dashboard: 4-step process and multi-dimensional analysis by Personality Type (Paladin - Grade A)",
+        "s5": "Community Forum: Share experiences, Q&A on resumes, interviews and recruitment preparation",
+        "s6": "Career Profile Management: Edit Career Documents with AI-powered optimization suggestions"
       },
       "demo": {
         "scanner": {
@@ -95,6 +95,26 @@
           "desc": "Type Safety",
           "cat": "Backend",
           "icon": "Code2"
+        }
+      },
+      "roadmap": {
+        "title": "Development Roadmap",
+        "steps": {
+          "s1": {
+            "phase": "Phase 1: Foundation",
+            "title": "Democratize Career Growth",
+            "desc": "Launch free diagnostic tools to help 10,000 job seekers overcome ATS barriers and understand their market value."
+          },
+          "s2": {
+            "phase": "Phase 2: Expansion",
+            "title": "Meritocracy Engine",
+            "desc": "Eliminate hiring bias through blind AI interview agents that highlight potential over pedigree, partnering with progressive enterprises."
+          },
+          "s3": {
+            "phase": "Phase 3: Ecosystem",
+            "title": "Social Mobility",
+            "desc": "Establish a decentralized talent network where skills—not geography or background—determine life-changing opportunities."
+          }
         }
       }
     },
@@ -159,10 +179,10 @@
         }
       },
       "screenshots": {
-        "s1": "Conversational Intake: Complex context understanding (budget, vibe, weather).",
-        "s2": "Logic Refinement: Handling edge cases and user constraints iteratively.",
-        "s3": "Strategic Planning: AI mapping optimal routes and schedules.",
-        "s4": "Final Execution: Detailed voucher generation and confirmation."
+        "s1": "Conversation Starter: System suggests smart questions and quick tags to explore travel",
+        "s2": "Preference Refinement: AI recommends and displays matching programs based on preferences",
+        "s3": "Itinerary Building: Select attractions and view detailed information for each location",
+        "s4": "Voucher Details: Display daily itinerary with recommendations and complete information"
       },
       "stack": {
         "s1": {
@@ -258,11 +278,12 @@
         }
       },
       "screenshots": {
-        "s1": "Unified Studio: Text, Image, and Audio tools in one view",
-        "s2": "Image Generator: DALL-E 3 prompting interface",
-        "s3": "Transcription Lab: Waveform view of uploaded audio",
-        "s4": "Text-to-Speech: Voice selection and modulation controls",
-        "s5": "History Gallery: Archive of all generated assets"
+        "s1": "Unified Dashboard: Multi-modal Quick Creation, trending Templates and Community Showcase",
+        "s2": "AI Writer Studio: Select templates by category (Social Media, Blog, Marketing...) to create content",
+        "s3": "Text Generation: Enter prompt and receive content results with hooks, hashtags based on template",
+        "s4": "Image Generator: Generate images from prompts with Architectural Design template and resolution adjustment",
+        "s5": "Audio Transcription: Upload audio file and receive accurate text transcription",
+        "s6": "Vision Analysis: AI analyzes and explains image content in detail"
       },
       "stack": {
         "s1": {
@@ -364,12 +385,12 @@
         }
       },
       "screenshots": {
-        "s1": "AI Camera: Real-time food recognition and macro breakdown.",
-        "s2": "Dashboard: Comprehensive health metrics and body tracking.",
-        "s3": "Neangi Chat: Personal diet coaching conversation.",
-        "s4": "Social Feed: Sharing healthy meals with the community.",
-        "s5": "Gamification: Badges, levels, and daily achievements.",
-        "s6": "Meal Planner: AI-suggested weekly menus."
+        "s1": "Login Screen: Welcome interface with 'What to Eat?' branding",
+        "s2": "Analysis Interface: Choose AI scan or manual search to log meals",
+        "s3": "AI Processing: Meal analysis screen with progress bar and real-time calorie estimation",
+        "s4": "Nutrition Dashboard: Calorie overview and detailed macro nutrients breakdown by percentage",
+        "s5": "Meal Details: View nutritional breakdown of each ingredient in the meal",
+        "s6": "Nutrition History: Calendar tracking with overview metrics (meals, avg score, calories, protein)"
       },
       "stack": {
         "s1": {
@@ -471,12 +492,12 @@
         }
       },
       "screenshots": {
-        "s1": "Oracle Table: Smooth card shuffling and selection UI.",
-        "s2": "Reader Selection: Choosing between unique AI personalities.",
-        "s3": "Spread View: Grand Tableau or 3-card spread layouts.",
-        "s4": "Deep Interpretation: Detailed breakdown of card meanings.",
-        "s5": "Chat Follow-up: Asking clarifying questions to the AI.",
-        "s6": "Daily Draw: One card guidance for the day."
+        "s1": "Topic Selection: Welcome screen with divination options (fortune, love, career...)",
+        "s2": "Card Selection: Card drawing interface with deck and topic-related question prompts",
+        "s3": "Reading Results: Display drawn cards and detailed interpretation of combined meanings",
+        "s4": "Card Details: Popup with in-depth explanation of individual card (The Dog - Loyalty, long-term relationships)",
+        "s5": "Topic Categories: Select area of interest for reading (Health, Marriage, Career...)",
+        "s6": "Reading History: Review past readings with complete analysis organized by tabs"
       },
       "stack": {
         "s1": {
@@ -578,12 +599,12 @@
         }
       },
       "screenshots": {
-        "s1": "Smart Gradebook: Overview of class performance.",
-        "s2": "Split-Screen: Side-by-side AI grading review.",
-        "s3": "Lesson Planner: AI generating curriculum content.",
-        "s4": "Matrix Builder: Designing balanced exam questions.",
-        "s5": "Student Analytics: Detailed strength/weakness chart.",
-        "s6": "Parent Connect: Automated progress reports."
+        "s1": "Module Dashboard: Overview of features (Class Management, Grade Analytics, AI Grading...)",
+        "s2": "AI Grading Module: Grading options (multiple choice, essay for middle/high school, math problems)",
+        "s3": "Analytics Dashboard: Class metrics, grade distribution charts and student classification",
+        "s4": "Exam Management: View student profiles and multiple-choice questions with scores",
+        "s5": "AI Lesson Planner: Word/Slide editor with AI assistant for generating lesson content",
+        "s6": "Exam Bank: List of exams with content preview and detailed questions"
       },
       "stack": {
         "s1": {

@@ -72,12 +72,12 @@
         }
       },
       "screenshots": {
-        "s1": "Thẩm định Resume: Phân tích sâu lỗ hổng kỹ năng",
-        "s2": "Smart Matching: AI ghép nối ứng viên với vị trí lý tưởng",
-        "s3": "Báo cáo Chi tiết: Chẩn đoán sự nghiệp toàn diện",
-        "s4": "Góc nhìn Tổng thể: Hồ sơ ứng viên 360 độ",
-        "s5": "Trung tâm Cộng đồng: Học hỏi và chia sẻ tài nguyên",
-        "s6": "Lộ trình Sự nghiệp: Quy hoạch chiến lược dài hạn"
+        "s1": "Editor Resume Thông minh: AI phát hiện lỗi và đề xuất cải thiện chính tả, văn phong",
+        "s2": "Báo cáo Matching Chi tiết: Đánh giá độ phù hợp ứng viên với JD theo 3 chiều (Culture Fit, Requirements, Experience)",
+        "s3": "Chẩn đoán Resume Trực quan: Biểu đồ phân tích 7 tiêu chí và đánh giá từng yêu cầu chi tiết",
+        "s4": "Dashboard Tổng quan: Quy trình 4 bước và phân tích đa chiều theo Personality Type (Paladin - Grade A)",
+        "s5": "Diễn đàn Cộng đồng: Chia sẻ kinh nghiệm, hỏi đáp về CV, phỏng vấn và chuẩn bị tuyển dụng",
+        "s6": "Quản lý Hồ sơ Nghề nghiệp: Chỉnh sửa Career Documents với AI gợi ý tối ưu thông tin"
       },
       "stack": {
         "s1": {
@@ -179,10 +179,10 @@
         }
       },
       "screenshots": {
-        "s1": "Hội Thoại Nâng Cao: Hiểu ngữ cảnh phức tạp (ngân sách, sở thích, thời tiết).",
-        "s2": "Xử Lý Logic: Tinh chỉnh các trường hợp ngoại lệ và ràng buộc của người dùng.",
-        "s3": "Lập Kế Hoạch Chiến Lược: AI vẽ bản đồ tối ưu lộ trình và lịch trình.",
-        "s4": "Thực Thi Cuối Cùng: Tạo voucher chi tiết và xác nhận dịch vụ."
+        "s1": "Bắt đầu Hội thoại: Hệ thống gợi ý câu hỏi thông minh và quick tags để khám phá du lịch",
+        "s2": "Tinh chỉnh Yêu cầu: AI đề xuất và hiển thị các chương trình phù hợp dựa trên preferences",
+        "s3": "Xây dựng Lịch trình: Chọn điểm tham quan và xem thông tin chi tiết từng địa điểm",
+        "s4": "Chi tiết Voucher: Hiển thị lịch trình từng ngày với khuyến nghị và thông tin đầy đủ"
       },
       "stack": {
         "s1": {
@@ -278,11 +278,12 @@
         }
       },
       "screenshots": {
-        "s1": "Studio Hợp nhất: Text, Image, Audio trong một màn hình",
-        "s2": "Image Generator: Giao diện prompt DALL-E 3",
-        "s3": "Phòng Lab Gỡ băng: Xem sóng âm thanh upload",
-        "s4": "Text-to-Speech: Chỉnh giọng đọc và ngữ điệu",
-        "s5": "Thư viện: Lưu trữ lịch sử tạo nội dung"
+        "s1": "Dashboard Tổng hợp: Quick Creation đa phương thức, Templates trending và Community Showcase",
+        "s2": "AI Writer Studio: Chọn template theo category (Social Media, Blog, Marketing...) để tạo nội dung",
+        "s3": "Text Generation: Nhập prompt và nhận kết quả content với hooks, hashtags theo template",
+        "s4": "Image Generator: Tạo ảnh từ prompt với template Architectural Design và điều chỉnh resolution",
+        "s5": "Audio Transcription: Upload file âm thanh và nhận văn bản transcription chính xác",
+        "s6": "Vision Analysis: AI phân tích và giải thích nội dung hình ảnh chi tiết"
       },
       "stack": {
         "s1": {
@@ -384,12 +385,12 @@
         }
       },
       "screenshots": {
-        "s1": "AI Camera: Nhận diện món ăn và phân tích macro thời gian thực.",
-        "s2": "Dashboard: Chỉ số sức khỏe toàn diện và theo dõi cơ thể.",
-        "s3": "Neangi Chat: Trò chuyện tư vấn chế độ ăn cá nhân hóa.",
-        "s4": "Social Feed: Chia sẻ bữa ăn lành mạnh cùng cộng đồng.",
-        "s5": "Gamification: Huy hiệu, cấp độ và thành tựu hàng ngày.",
-        "s6": "Meal Planner: Thực đơn tuần do AI đề xuất."
+        "s1": "Màn hình Đăng nhập: Giao diện welcome với branding 'Nền Ăn Gì?'",
+        "s2": "Giao diện Phân tích: Chọn AI scan hoặc tìm kiếm thủ công để log bữa ăn",
+        "s3": "AI Processing: Màn hình phân tích món ăn với progress bar và ước tính calo thời gian thực",
+        "s4": "Dashboard Dinh dưỡng: Tổng quan calo và phân tích macro nutrients chi tiết theo phần trăm",
+        "s5": "Chi tiết Món ăn: Xem breakdown dinh dưỡng từng thành phần trong bữa ăn",
+        "s6": "Lịch sử Dinh dưỡng: Calendar tracking với metrics tổng quan (bữa ăn, điểm TB, calo, protein)"
       },
       "stack": {
         "s1": {
@@ -491,12 +492,12 @@
         }
       },
       "screenshots": {
-        "s1": "Bàn Oracle: Giao diện tráo và chọn bài mượt mà.",
-        "s2": "Chọn Reader: Lựa chọn giữa các nhân cách AI độc đáo.",
-        "s3": "Giao diện Trải bài: Grand Tableau hoặc trải 3 lá.",
-        "s4": "Giải nghĩa Sâu: Phân tích chi tiết ý nghĩa lá bài.",
-        "s5": "Chat Follow-up: Đặt câu hỏi làm rõ với AI.",
-        "s6": "Lá bài Ngày: Lời khuyên dẫn lối cho ngày mới."
+        "s1": "Chọn Chủ đề: Màn hình welcome với các tùy chọn bói toán (tử vi, tình duyên, công việc...)",
+        "s2": "Chọn Lá bài: Giao diện rút bài với deck cards và câu hỏi gợi ý về chủ đề",
+        "s3": "Kết quả Đọc bài: Hiển thị các lá bài đã rút và phân tích chi tiết ý nghĩa kết hợp",
+        "s4": "Chi tiết Lá bài: Popup giải nghĩa sâu từng lá (The Dog - Trung thành, quan hệ lâu dài)",
+        "s5": "Danh mục Chủ đề: Lựa chọn lĩnh vực muốn bói (Sức khỏe, Hôn nhân, Sự nghiệp...)",
+        "s6": "Lịch sử Readings: Xem lại các lần bói trước với phân tích đầy đủ theo tabs"
       },
       "stack": {
         "s1": {
@@ -598,12 +599,12 @@
         }
       },
       "screenshots": {
-        "s1": "Sổ Điểm Thông Minh: Tổng quan hiệu suất lớp học.",
-        "s2": "Màn hình Kép: Đối chiếu chấm điểm AI bên cạnh bài làm.",
-        "s3": "Soạn Bài Giảng: AI tạo nội dung giáo trình.",
-        "s4": "Xây Dựng Ma Trận: Thiết kế câu hỏi thi cân bằng.",
-        "s5": "Phân Tích Học Sinh: Biểu đồ điểm mạnh/yếu chi tiết.",
-        "s6": "Kết Nối Phụ Huynh: Báo cáo tiến độ tự động."
+        "s1": "Dashboard Modules: Tổng quan các tính năng (Quản lý lớp, Phân tích điểm, Chấm bài AI...)",
+        "s2": "Module Chấm bài AI: Các tùy chọn chấm (trắc nghiệm, tự luận THCS/THPT, giải toán)",
+        "s3": "Analytics Dashboard: Metrics lớp học, biểu đồ phổ điểm và phân loại học sinh",
+        "s4": "Quản lý Bài thi: Xem profile học sinh và danh sách câu hỏi trắc nghiệm với điểm số",
+        "s5": "Soạn Giáo án AI: Editor Word/Slide với AI assistant tạo nội dung bài giảng",
+        "s6": "Ngân hàng Đề thi: Danh sách đề thi với preview nội dung và câu hỏi chi tiết"
       },
       "stack": {
         "s1": {

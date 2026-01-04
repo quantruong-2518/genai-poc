@@ -1,46 +1,62 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import {
-  Code2,
-  Database,
-  Globe,
-  Layout,
-  Server,
-  Smartphone,
-  Cpu,
-  Cloud,
-  Layers,
-  Bot,
-  Terminal,
-  Zap,
-} from 'lucide-react';
+import { Code2 } from 'lucide-react';
 
 // Map stack names to Simple Icons slugs
 const STACK_SLUGS: Record<string, string> = {
+  // Frontend
   'Next.js': 'nextdotjs',
+  'Next.js 14': 'nextdotjs',
   React: 'react',
   TypeScript: 'typescript',
   Tailwind: 'tailwindcss',
+  TailwindCSS: 'tailwindcss',
+  'Framer Motion': 'framer',
+  Zustand: 'react', // Use React logo as fallback
+
+  // Backend
   'Node.js': 'nodedotjs',
   NestJS: 'nestjs',
   Python: 'python',
   FastAPI: 'fastapi',
+
+  // Database & Cache
   PostgreSQL: 'postgresql',
   Redis: 'redis',
   MongoDB: 'mongodb',
+  TypeORM: 'typeorm',
+
+  // Queue
+  BullMQ: 'bull',
+
+  // Cloud & DevOps
   Firebase: 'firebase',
-  Flutter: 'flutter',
   AWS: 'amazonaws',
+  'AWS S3': 'amazonaws',
   GCP: 'googlecloud',
   Docker: 'docker',
   Kubernetes: 'kubernetes',
+
+  // Mobile
+  Flutter: 'flutter',
+
+  // AI/ML
   OpenAI: 'openai',
+  'OpenAI 4o': 'openai',
+  ChatGPT: 'openai',
+  'GPT-4o': 'openai',
+  Whisper: 'openai',
   Gemini: 'googlegemini',
+  'Gemini 1.5': 'googlegemini',
+  'Gemini Vision': 'googlegemini',
   Claude: 'anthropic',
-  'Llama 2': 'meta', // Meta AI
+  'Llama 2': 'meta',
   LangChain: 'langchain',
   HuggingFace: 'huggingface',
+
+  // Tools
+  Swagger: 'swagger',
 };
 
 interface TechStackItem {
@@ -93,12 +109,12 @@ export function TechStackVisualizer({ stacks }: TechStackVisualizerProps) {
               key={`${stack.name}-${idx}`}
               className="flex items-center gap-4 transition-all duration-300 relative group/icon"
             >
-              {/* Real Logo - Raw Color */}
+              {/* Real Logo - Themed Color */}
               {slug ? (
                 <img
-                  src={`https://cdn.simpleicons.org/${slug}`}
+                  src={`https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/${slug}.svg`}
                   alt={stack.name}
-                  className="w-10 h-10 object-contain hover:scale-110 transition-transform duration-300 opacity-90 hover:opacity-100"
+                  className="w-10 h-10 object-contain hover:scale-110 transition-all duration-300 opacity-90 hover:opacity-100 grayscale brightness-[0.3] dark:brightness-100 dark:invert"
                 />
               ) : (
                 // Fallback to Lucide Icon

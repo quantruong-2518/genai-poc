@@ -256,7 +256,6 @@ export default async function ProjectDetail({
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
-                className="pt-8 border-t border-slate-100 dark:border-slate-800"
               >
                 <TechStackVisualizer stacks={stackItems} />
               </motion.div>
